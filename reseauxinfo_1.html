@@ -1,0 +1,487 @@
+<!-- <!DOCTYPE html>-->
+
+<html lang="fr">
+
+  <head>
+    <title>Réseaux informatiques</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" media="screen" type="text/css" title="Design" href="design.css" />
+  </head>
+
+  <body>
+    
+    <div class="contenu">
+      
+      <!--             Titre                -->
+      <div class="gros_titre">
+	<h1>Réseaux informatiques</h1>
+	<img style="max-width: 70vw;" src="images/titre.jpg" alt="">
+	
+	<!--             Navigation                -->
+	<div class="navigation">
+	  <a style="width: 13vw; height: 4vw;border-right: 0.1vw solid #000000;" class="lien_actif" href="reseauxinfo_1.html">
+	    Interconnexion
+	  </a>
+	  <a style="width: 13vw; height: 4vw;border-right: 0.1vw solid #000000;" href="reseauxinfo_2.html">
+	    Adressage
+	  </a>
+	  <a style="width: 13vw; height: 4vw;border-right: 0.1vw solid #000000;" href="reseauxinfo_3.html">
+	    Routage
+	  </a>
+	</div>
+      </div>
+      
+      <!--             Questions               -->
+      <div class="justifie">
+	
+	<h2>Réseau informatique d'une salle de classe</h2>
+	
+	<div class="double_5050">
+	  <div class="colonne_gauche">
+	    <p>
+
+	      
+	    <p>Le but l'exercice est de compléter le réseau informatique, dans l'image ci-contre, de la salle de classe, avec:</p>
+	    <ul>
+	      <li>L'ajout de 4 PCs et de 1 ordinateur portable.</li>
+	      <li>L'ajout d'un casque, d'un microphone, et d'une webcam sur chaque PC.</li>
+	      <li>L'interconnexion du réseau.</li>
+	      
+	    </ul>
+	  </div>
+	  <div class="colonne_droite">
+	    <div class="image_centree"><img  style="max-width: 30vw;border: 2px solid black;" src="images/cablage_01.jpg" alt=""><br/><br/>
+	    </div>
+	  </div>
+	</div>
+
+
+	<div class="double_1090">
+	  <div class="colonne_gauche">
+	    <img style="max-width: 50vw;" src="images/pt.jpg" alt="">
+	  </div>
+	  <div class="colonne_droite"><h3>Packet Tracer</h3></div>
+	</div>
+
+	<p>Packet Tracer est une application, télécharger la <a href="https://drive.google.com/file/d/10A8nBhtv_ag5yma47OSG4M9za8SSz1zP/view?usp=sharing">version 6.0.1</a>, de conception et de simulation de réseaux informatiques. <b>Cliquez</b> sur le bouton du "menu démarrer" de Windows, et <b>lancez</b> l'application "Cisco Packet Tracer". </p>
+
+	<h4><a id="interface_pt"></a>Interface utilisateur:</h4>
+
+	<div class="double_5050">
+	  <div class="colonne_gauche">
+	    <p>La capture d'écran ci-contre montre l'interface de Packet Tracer, avec:</p>
+	    <ol>
+	      <li>La barre de menu.</li>
+	      <li>La barre d'outils principale.</li>
+	      <li>La barre des outils communs.</li>
+	      <li>La navigation entre les espaces de travail logique et physique.</li>
+	      <li>L'espace de travail.</li>
+	      <li>La navigation entre les modes, temps réel et simulation, pour les tests de connectivité.</li>
+	      <li>La boite des composants réseaux.</li>
+	      <li>La boite de sélection du type d'appareil.</li>
+	      <li>La boite de sélection d'un appareil spécifique.</li>
+	      <li>La fenêtre des tests de connectivité.</li>
+	    </ol>
+	  </div>
+	  <div class="colonne_droite">
+	    <div class="image_centree"><img  style="max-width: 30vw;border: 2px solid black;" src="images/cablage_03.jpg" alt=""><br/><br/>
+	    </div>
+	  </div>
+	</div>
+
+	<h4>Médias de connexion:</h4>
+
+	<div class="double_5050">
+	  <div class="colonne_gauche">
+	    <p>Il faut sélectionner l'icône "Connections", dans "la boite de sélection du type d'appareil", pour voir les médias disponibles dans Packet Tracer.</p>
+	  </div>
+	  <div class="colonne_droite">
+	    <div class="image_centree"><img  style="max-width: 30vw;border: 2px solid black;" src="images/cablage_04.jpg" alt=""><br/><br/>
+	    </div>
+	  </div>
+	</div>
+
+	<p>Les différents types de média sont:</p>
+
+	<table style="border: 0vw solid black;width:100%;">
+	  <tr>
+	    <td style="border: 0vw solid black;"><ul><li>Console: Il sert à raccorder un PC avec un routeur ou un commutateur. Ce type de connexion est utilisée pour configurer in situ des appareils d'infrastructure. Pour établir la communication, il faut que la vitesse, les bits de données (7 ou 8 bits), le bit de parité soient configurés identiquement des deux côtés, et les bits de stop (1 ou 2 bits) et le contrôle de flux peuvent être configurés différemment.</li></ul></td>
+	    <td style="border: 0vw solid black;width:11%;text-align:center;" valign="top"><img  style="max-width: 3vw;" src="images/cablage_04_1.jpg" alt=""><br/><br/></td>
+	  </tr>
+	  <tr>
+	    <td style="border: 0vw solid black;"><ul><li>Ethernet droit: Il sert à raccorder des appareils qui fonctionnent sur des couches différentes du modèle OSI (commutateur et routeur, commutateur et PC/Serveur, concentrateur et PC/Serveur). Il peut être connecté aux types de ports suivants: 10 Mbps cuivre (Ethernet), 100 Mbps cuivre (Fast Ethernet), 1000 Mbps cuivre (Gigabit Ethernet).</li></ul></td>
+	    <td style="border: 0vw solid black;width:11%;text-align:center;" valign="top"><img  style="max-width: 3vw;" src="images/cablage_04_2.jpg" alt=""><br/><br/></td>
+	  </tr>
+	  <tr>
+	    <td style="border: 0vw solid black;"><ul><li>Ethernet croisé: Il sert à raccorder des appareils qui fonctionnent sur la même couche du modèle OSI (commutateur et commutateur/concentrateur, concentrateur et concentrateur, routeur et routeur/PC, PC et PC). Il peut être connecté aux types de ports suivants: 10 Mbps cuivre (Ethernet), 100 Mbps cuivre (Fast Ethernet), 1000 Mbps cuivre (Gigabit Ethernet).</li></ul></td>
+	    <td style="border: 0vw solid black;width:11%;text-align:center;" valign="top"><img  style="max-width: 3vw;" src="images/cablage_04_3.jpg" alt=""><br/><br/></td>
+	  </tr>
+	  <tr>
+	    <td style="border: 0vw solid black;"><ul><li>Fibre optique: Il sert à faire un raccordement entre deux ports pour la fibre optique (100 Mbps ou 1000 Mbps).</li></ul> </td>
+	    <td style="border: 0vw solid black;width:11%;text-align:center;" valign="top"><img  style="max-width: 3vw;" src="images/cablage_04_4.jpg" alt=""><br/><br/></td>
+	  </tr>
+	  <tr>
+	    <td style="border: 0vw solid black;"><ul><li>Téléphonique: Il sert à faire un raccordement entre deux ports modem (RJ11, ...). On rencontre ce type de connexion pour un appareil utilisateur susceptible de passer un appel téléphonique à travers un réseau informatique, ou pour raccorder un modem (la box) à Internet.</li></ul> </td>
+	    <td style="border: 0vw solid black;width:11%;text-align:center;" valign="top"><img  style="max-width: 3vw;" src="images/cablage_04_5.jpg" alt=""><br/><br/></td>
+	  </tr>
+	  <tr>
+	    <td style="border: 0vw solid black;"><ul><li>Coaxial: Il sert à faire un raccordement entre deux ports coaxiaux, comme pour raccorder un modem à Internet. Le raccordement pourra se faire sur une plus grande distance qu'avec un câble téléphonique, et le débit sera plus important.</li></ul></td>
+	    <td style="border: 0vw solid black;width:11%;text-align:center;" valign="top"><img  style="max-width: 3vw;" src="images/cablage_04_6.jpg" alt=""><br/><br/></td>
+	  </tr>
+	  <tr>
+	    <td style="border: 0vw solid black;"><ul><li>Série (DCE et DTE): Il sert à faire un raccordement entre deux ports séries, comme pour raccorder deux routeurs. On rencontre ce type de connexion dans les réseaux étendus (WAN). Dans le cas d'un utilisateur qui raccorde son routeur (DTE) à Internet, il faut que le routeur (DCE) du fournisseur d'accès transmette le signal d'horloge.</li></ul></td>
+	    <td style="border: 0vw solid black;width:11%;text-align:center;" valign="top"><img  style="max-width: 3vw;" src="images/cablage_04_7.jpg" alt=""> <img  style="max-width: 3vw;" src="images/cablage_04_8.jpg" alt=""></td>
+	  </tr>
+	  <tr>
+	    <td style="border: 0vw solid black;"><ul><li>Octal: Il sert à raccorder un serveur de terminal, par un port SCSI-2, avec jusqu'à 8 appareils d'infrastructure (routeur ou commutateur), par leur port console ou auxiliaire (prise RJ-45). Ce type de connexion est utilisée dans les centres de données, par exemple, pour pouvoir configurer, à travers un réseau, des appareils d'infrastructure.</li></ul></td>
+	    <td style="border: 0vw solid black;width:11%;text-align:center;" valign="top"><img  style="max-width: 3vw;" src="images/cablage_04_9.jpg" alt=""></td>
+	  </tr>
+	</table>
+
+	<h4><a id="configuration_pc"></a>Configuration matérielle d'un appareil:</h4>
+
+	<div class="double_5050">
+	  <div class="colonne_gauche">
+	    <ol>
+	      <li><b>Faites</b> un clic gauche sur "End Devices" dans "la boite de sélection du type d'appareil".</li>
+	      <li><b>Faites</b> un clic gauche sur "PC-PT" dans "la boite de sélection d'un appareil spécifique".</li>
+	      <li><b>Faites</b> un clic gauche dans "l'espace de travail" pour installer un nouveau PC.</li>
+	      <li><b>Faites</b> un clic gauche sur le nouveau PC pour afficher son interface de configuration.</li>
+	      <li><b>Assurez-vous</b> que l'onglet "Physical" est sélectionné, et, si ce n'est pas le cas, faites un clic gauche dessus.</li>
+	    </ol>
+	  </div>
+	  <div class="colonne_droite">
+	    <div class="image_centree"><img  style="max-width: 30vw;border: 2px solid black;" src="images/cablage_06.jpg" alt=""><br/><br/>
+	    </div>
+	  </div>
+	</div>
+	
+
+	<div class="double_5050">
+	  <div class="colonne_gauche">
+	    <p>La capture d'écran ci-contre montre l'interface, dans Packet Tracer, pour configurer un PC, avec:</p>
+
+	    <ol>
+	      <li>La liste des modules disponibles.</li>
+	      <li>Le bouton marche/arrêt.</li>
+	      <li>Les interfaces de connexion du PC.</li>
+	    </ol>
+
+	    <p>Avant tout ajout/retrait d'un module, il faut éteindre l'appareil via son bouton marche/arrêt, puis, une fois la modification faite, le rallumer.</p>
+
+	    <p>Pour retirer un module, il faut le glisser-déposer sur "la liste des modules disponibles".</p>
+
+	    <p>Pour ajouter un module, il faut le glisser-déposer sur une interface de connexion vide.</p>
+	  </div>
+	  <div class="colonne_droite">
+	    <div class="image_centree"><img  style="max-width: 30vw;border: 2px solid black;" src="images/cablage_07.jpg" alt=""><br/><br/>
+	    </div>
+	  </div>
+	</div>
+
+	<p>Les modules disponibles pour un PC sont:</p>
+
+	<table style="border: 0vw solid black;width:100%;">
+	  <tr>
+	    <td style="border: 0vw solid black;"><ul><li>Les adaptateurs réseaux Linksys-WPC300N et PT-HOST-NM-1W disposent d'une antenne permettant de se connecter, dans la bande de fréquence à 2.4 GHz, à l'infrastructure d'un réseau local sans fil. L'adapteur réseaux PT-HOST-NM-1W-A, quant à lui, sert à se connecter dans la bande de fréquence à 5 GHz. </li></ul></td>
+	    <td style="border: 0vw solid black;width:20%;text-align:center;" valign="top"><img  style="max-width: 15vw;" src="images/cablage_08_1.jpg" alt=""><br/><br/></td>
+	  </tr>
+	  <tr>
+	    <td style="border: 0vw solid black;"><ul><li>L'adaptateur réseau PT-HOST-NM-1AM dispose d'un port RJ11 permettant un raccordement à une ligne téléphonique.</li></ul></td>
+	    <td style="border: 0vw solid black;width:20%;text-align:center;" valign="top"><img  style="max-width: 15vw;" src="images/cablage_08_2.jpg" alt=""><br/><br/></td>
+	  </tr>
+	  <tr>
+	    <td style="border: 0vw solid black;"><ul><li>L'adaptateur réseau PT-HOST-NM-1CE dispose d'un port Ethernet permettant de se connecter, par câble de type paires torsadés en cuivre, à l'infrastructure d'un réseau local.</li></ul></td>
+	    <td style="border: 0vw solid black;width:20%;text-align:center;" valign="top"><img  style="max-width: 15vw;" src="images/cablage_08_3.jpg" alt=""><br/><br/></td>
+	  </tr>
+	  <tr>
+	    <td style="border: 0vw solid black;"><ul><li>L'adaptateur réseau PT-HOST-NM-1CFE dispose d'un port Fast-Ethernet permettant un raccordement par câble de type paires torsadées en cuivre. Idéal pour toutes sortes d'applications en réseau local, l'adapteur Fast-Ethernet supporte de nombreuses fonctionnalités et standards pour l'interconnexion des réseaux. Il est capable de reconnaitre automatiquement une connexion Ethernet à 10 ou 100 Mbs<sup>-1</sup>. Il peut servir à déployer un réseau local virtuel (VLAN).</li></ul></td>
+	    <td style="border: 0vw solid black;width:20%;text-align:center;" valign="top"><img  style="max-width: 15vw;" src="images/cablage_08_4.jpg" alt=""><br/><br/></td>
+	  </tr>
+	  <tr>
+	    <td style="border: 0vw solid black;"><ul><li>L'adaptateur réseau PT-HOST-NM-1CGE dispose d'un port Gigabit Ethernet permettant de se connecter, par câble de type paires torsadés en cuivre, à l'infrastructure d'un réseau local.</li></ul></td>
+	    <td style="border: 0vw solid black;width:20%;text-align:center;" valign="top"><img  style="max-width: 15vw;" src="images/cablage_08_5.jpg" alt=""><br/><br/></td>
+	  </tr>
+	  <tr>
+	    <td style="border: 0vw solid black;"><ul><li>L'adaptateur réseau PT-HOST-NM-1FFE dispose d'un port Fast-Ethernet permettant de se connecter, par la fibre optique, à l'infrastructure d'un réseau local.</li></ul></td>
+	    <td style="border: 0vw solid black;width:20%;text-align:center;" valign="top"><img  style="max-width: 15vw;" src="images/cablage_08_6.jpg" alt=""><br/><br/></td>
+	  </tr>
+	  <tr>
+	    <td style="border: 0vw solid black;"><ul><li>L'adaptateur réseau PT-HOST-NM-1FGE dispose d'un port Gigabit Ethernet permettant de se connecter, par la fibre optique, à l'infrastructure d'un réseau local.</li></ul></td>
+	    <td style="border: 0vw solid black;width:20%;text-align:center;" valign="top"><img  style="max-width: 15vw;" src="images/cablage_08_7.jpg" alt=""><br/><br/></td>
+	  </tr>
+	  <tr>
+	    <td style="border: 0vw solid black;"><ul><li>Le casque PT-HEADPHONE permet à l'utilisateur d'écouter de la musique et des sons depuis l'ordinateur.</li></ul></td>
+	    <td style="border: 0vw solid black;width:20%;text-align:center;" valign="top"><img  style="max-width: 10vw;" src="images/cablage_08_8.jpg" alt=""><br/><br/></td>
+	  </tr>
+	  <tr>
+	    <td style="border: 0vw solid black;"><ul><li>Le microphone PT-MICROPHONE permet à l'ordinateur d'enregistrer le son.</li></ul></td>
+	    <td style="border: 0vw solid black;width:20%;text-align:center;" valign="top"><img  style="max-width: 10vw;" src="images/cablage_08_9.jpg" alt=""><br/><br/></td>
+	  </tr>
+	  <tr>
+	    <td style="border: 0vw solid black;"><ul><li>La webcam PT-CAMERA permet à l'ordinateur d'enregistrer des images et des vidéos.</li></ul></td>
+	    <td style="border: 0vw solid black;width:20%;text-align:center;" valign="top"><img  style="max-width: 10vw;" src="images/cablage_08_10.jpg" alt=""><br/><br/></td>
+	  </tr>
+	  <tr>
+	    <td style="border: 0vw solid black;"><ul><li>Le disque dur externe PT-USB-HARD-DRIVE permet d'ajouter un stockage externe supplémentaire à l'ordinateur.</li></ul></td>
+	    <td style="border: 0vw solid black;width:20%;text-align:center;" valign="top"><img  style="max-width: 10vw;" src="images/cablage_08_11.jpg" alt=""><br/><br/></td>
+	  </tr>
+	</table>
+
+
+	<div class="double_1090">
+	  <div class="colonne_gauche">
+	    <img style="max-width: 50vw;" src="images/maj.jpg" alt="">
+	  </div>
+	  <div class="colonne_droite"><h3>Installation des documents de travail</h3></div>
+	</div>
+
+	<ul>
+	  <li><b>Téléchargez</b> le fichier <a href="https://drive.google.com/file/d/10_32lcL9Vw_jt4o6whkhJVvCeot9V5wY/view?usp=sharing">salle_de_classe.zip</a> et sauvegardez-le sur votre clé USB ou, à défaut, dans votre espace personnel.</li>
+	  <li><b>Faites</b> un clic droit sur le fichier "salle_de_classe.zip", et <b>sélectionnez</b> "extraire tout".</li>
+	  <li><b>Faites</b> un double clic gauche sur le dossier "salle_de_classe" qui a été extrait, puis sur le fichier "salle_de_classe.pka" à l'intérieur du dossier.</li>
+	</ul>
+
+	<div class="double_1090">
+	  <div class="colonne_gauche">
+	    <img style="max-width: 50vw;" src="images/finalisation.jpg" alt="">
+	  </div>
+	  <div class="colonne_droite"><h3>Finalisation du réseau de la salle de classe</h3></div>
+	</div>
+
+	<div class="double_5050">
+	  <div class="colonne_gauche">
+	    <ul>
+	      <li><span style="color:rgb(255,0,0);">N'oubliez pas de sauvegarder régulièrement votre travail. Transférez-le, voir "transfert du travail" en fin de chapitre, à la fin de chaque séance.</span></li>
+	    </ul>
+	  </div>
+	  <div class="colonne_droite">
+	    <div class="image_centree"><img  style="max-width: 30vw;border: 2px solid black;" src="images/salle_de_classe_01_1.jpg" alt=""><br/><br/>
+	    </div>
+	  </div>
+	</div>
+
+	<h4>Ajout de quatre PCs:</h4>
+	
+	<div class="double_5050">
+	  <div class="colonne_gauche">
+	    <ol>
+	      <li><b>Faites</b> un clic gauche sur "End Devices" dans "la boite de sélection du type d'appareil".</li>
+	      <li><b>Faites</b> un clic gauche sur "PC-PT" dans "la boite de sélection d'un appareil spécifique".</li>
+	      <li><b>Faites</b> un clic gauche sur la table pour y poser un nouveau PC.</li>
+	    </ol>
+	  </div>
+	  <div class="colonne_droite">
+	    <div class="image_centree"><img  style="max-width: 30vw;border: 2px solid black;" src="images/salle_de_classe_01_2.jpg" alt=""><br/><br/>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="double_5050">
+	  <div class="colonne_gauche">
+	    <ol>
+	      <li><b>Assurez-vous</b> que l'outil "Select" est sélectionné dans "la barre des outils communs", et <b>faites</b> un clic gauche sur le PC ajouté à l'étape précédente.</li>
+	      <li><b>Faites</b> un clic gauche sur l'onglet "Config".</li>
+	      <li><b>Modifiez</b> le nom du PC par "PC4".</li>
+	      <li><b>Fermez</b> la fenêtre.</li>
+	    </ol>
+	  </div>
+	  <div class="colonne_droite">
+	    <div class="image_centree"><img  style="max-width: 30vw;border: 2px solid black;" src="images/salle_de_classe_01_3.jpg" alt=""><br/><br/>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="double_5050">
+	  <div class="colonne_gauche">
+	    <p><b>Ajoutez</b> et <b>nommez</b> les 4 PCs manquants comme dans la capture d'écran ci-contre.</p>
+	  </div>
+	  <div class="colonne_droite">
+	    <div class="image_centree"><img  style="max-width: 30vw;border: 2px solid black;" src="images/salle_de_classe_01_4.jpg" alt=""><br/><br/>
+	    </div>
+	  </div>
+	</div>
+
+	<h4>Configuration matérielle des PCs:</h4>
+
+	<div class="double_5050">
+	  <div class="colonne_gauche">
+	    <ol>
+	      <li><b>Faites</b> un clic gauche sur le PC.</li>
+	      <li><b>Assurez-vous</b> d'être sur l'onglet "Pysical', et, si ce n'est pas le cas, faites un clic gauche dessus.</li>
+	      <li><b>Posez</b> le curseur de la souris sur l'adaptateur réseau, et <b>assurez-vous</b> que c'est le PT-HOST-NM-1CFE qui est installé. Si ce n'est pas le cas, <a href="#configuration_pc">il faut procéder à un changement</a>.</li>
+	    </ol>
+	  </div>
+	  <div class="colonne_droite">
+	    <div class="image_centree"><img  style="max-width: 30vw;border: 2px solid black;" src="images/salle_de_classe_01_5.jpg" alt=""><br/><br/>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="double_5050">
+	  <div class="colonne_gauche">
+	    <p><b>Assurez-vous</b> que chaque PC dispose d'un casque, d'un microphone, et d'une webcam, comme dans la capture d'écran ci-contre.</p>
+	  </div>
+	  <div class="colonne_droite">
+	    <div class="image_centree"><img  style="max-width: 30vw;border: 2px solid black;" src="images/salle_de_classe_01_6.jpg" alt=""><br/><br/>
+	    </div>
+	  </div>
+	</div>
+
+	<h4>Ajout d'un ordinateur portable:</h4>
+
+	<div class="double_5050">
+	  <div class="colonne_gauche">
+	    <ol>
+	      <li><b>Faites</b> un clic gauche sur "End Devices" dans "la boite de sélection du type d'appareil".</li>
+	      <li><b>Faites</b> un clic gauche sur "Laptop-PT" dans "la boite de sélection d'un appareil spécifique".</li>
+	      <li><b>Faites</b> un clic gauche sur la table pour y poser un nouvel ordinateur portable, et <b>nommez-le</b>, en suivant la même procédure que pour un PC, "Laptop1".</li>
+	    </ol>
+	  </div>
+	  <div class="colonne_droite">
+	    <div class="image_centree"><img  style="max-width: 30vw;border: 2px solid black;" src="images/salle_de_classe_01_7.jpg" alt=""><br/><br/>
+	    </div>
+	  </div>
+	</div>
+
+	<h4>Configuration matérielle de l'ordinateur portable:</h4>
+
+	<div class="double_5050">
+	  <div class="colonne_gauche">
+	    <ol>
+	      <li><b>Faites</b> un clic gauche sur le nouvel ordinateur portable.</li>
+	      <li><b>Assurez-vous</b> d'être sur l'onglet "Physical", et, si ce n'est pas le cas, faites un clic gauche dessus.</li>
+	      <li><b>Changez</b> si besoin l'adaptateur réseau, en suivant la même <a href="#configuration_pc">procédure que pour un PC</a>, par le Linksys-WPC300N.</li>
+	    </ol>
+	  </div>
+	  <div class="colonne_droite">
+	    <div class="image_centree"><img  style="max-width: 30vw;border: 2px solid black;" src="images/salle_de_classe_01_8.jpg" alt=""><br/><br/>
+	    </div>
+	  </div>
+	</div>
+
+	<h4>Interconnexion du réseau:</h4>
+
+	<div class="double_5050">
+	  <div class="colonne_gauche">
+	    <ol>
+	      <li><b>Faites</b> un clic gauche sur "Connections" dans "la boite de sélection du type d'appareil". </li>
+	      <li><b>Faites</b> un clic gauche sur "Copper Straight-Through" dans "la boite de sélection d'un appareil spécifique".</li>
+	      <li><b>Faites</b> un clic gauche sur le serveur "Web server".</li>
+	      <li><b>Faites</b> un clic gauche, dans la petite boite de dialogue qui est apparu en cliquant sur le serveur, sur l'interface "FastEthernet0".</li>
+	      <li><b>Faites</b> un clic gauche sur le cloud "Cloud0".</li>
+	      <li><b>Faites</b> un clic gauche, dans la petite boite de dialogue qui est apparu en cliquant sur le cloud, sur l'interface "FastEthernet3".</li>
+	    </ol>
+	  </div>
+	  <div class="colonne_droite">
+	    <div class="image_centree"><img  style="max-width: 30vw;border: 2px solid black;" src="images/salle_de_classe_01_9.jpg" alt=""><br/><br/>
+	    </div>
+	  </div>
+	</div>
+
+	<p><b>Complétez</b> l'interconnexion du réseau en suivant les spécifications dans le tableau suivant:</p>
+
+	<table style="border: 1px solid black;margin-left:auto;margin-right:auto;text-align:center;width:70%;">
+	  <tr><td style="background-color:black;color:white;text-align:center;border: 1px solid white;width:10%;" colspan="2">Hôte 1</td><td style="background-color:black;color:white;text-align:center;border: 1px solid white;width:10%;" rowspan="2">Média</td><td style="background-color:black;color:white;text-align:center;border: 1px solid white;width:10%;" colspan="2">Hôte 2</td></tr>
+	  <tr><td style="border: 1px solid white;background-color:black;color:white;text-align:center;width:10%;">Nom</td><td style="background-color:black;color:white;text-align:center;border: 1px solid white;width:10%;">Interface</td><td style="background-color:black;color:white;text-align:center;border: 1px solid white;width:10%;">Nom</td><td style="border: 1px solid white;background-color:black;color:white;text-align:center;width:10%;">Interface</td></tr>
+
+	  <tr><td>Web Server</td><td style="border-left: 1px solid black;">FastEthernet0</td><td style="border-left: 1px solid black;">Ethernet droit</td><td style="border-left: 1px solid black;">Cloud0</td><td style="border-left: 1px solid black;">FastEthernet3</td></tr>
+	  
+	  <tr><td style="background-color:DarkGray;">Cloud0</td><td style="background-color:DarkGray;border-left: 1px solid black;">Coaxial4</td><td style="background-color:DarkGray;border-left: 1px solid black;">Coaxial</td><td style="background-color:DarkGray;border-left: 1px solid black;">Modem0</td><td style="background-color:DarkGray;border-left: 1px solid black;">Port0</td></tr>
+
+	  <tr><td>Modem0</td><td style="border-left: 1px solid black;">Port 1</td><td style="border-left: 1px solid black;">Ethernet droit</td><td style="border-left: 1px solid black;">Router0</td><td style="border-left: 1px solid black;">Internet</td></tr>
+
+	  <tr><td style="background-color:DarkGray;">Wireless Router 0</td><td style="background-color:DarkGray;border-left: 1px solid black;">Ethernet 1</td><td style="background-color:DarkGray;border-left: 1px solid black;">Ethernet croisé</td><td style="background-color:DarkGray;border-left: 1px solid black;">Switch2</td><td style="background-color:DarkGray;border-left: 1px solid black;">FastEthernet9/1</td></tr>
+
+	  <tr><td style="background-color:DarkGray;">Wireless Router 0</td><td style="background-color:DarkGray;border-left: 1px solid black;">Ethernet 2</td><td style="background-color:DarkGray;border-left: 1px solid black;">Ethernet croisé</td><td style="background-color:DarkGray;border-left: 1px solid black;">Switch5</td><td style="background-color:DarkGray;border-left: 1px solid black;">FastEthernet9/1</td></tr>
+
+	  <tr><td style="background-color:DarkGray;">Wireless Router 0</td><td style="background-color:DarkGray;border-left: 1px solid black;">Ethernet 3</td><td style="background-color:DarkGray;border-left: 1px solid black;">Ethernet droit</td><td style="background-color:DarkGray;border-left: 1px solid black;">PC0</td><td style="background-color:DarkGray;border-left: 1px solid black;">FastEthernet0</td></tr>
+
+	  <tr><td>Switch2</td><td style="border-left: 1px solid black;">FastEthernet1/1</td><td style="border-left: 1px solid black;">Ethernet droit</td><td style="border-left: 1px solid black;">PC3</td><td style="border-left: 1px solid black;">FastEthernet0</td></tr>
+
+	  <tr><td>Switch2</td><td style="border-left: 1px solid black;">FastEthernet2/1</td><td style="border-left: 1px solid black;">Ethernet droit</td><td style="border-left: 1px solid black;">PC4</td><td style="border-left: 1px solid black;">FastEthernet0</td></tr>
+
+	  <tr><td>Switch2</td><td style="border-left: 1px solid black;">FastEthernet3/1</td><td style="border-left: 1px solid black;">Ethernet droit</td><td style="border-left: 1px solid black;">PC5</td><td style="border-left: 1px solid black;">FastEthernet0</td></tr>
+
+	  <tr><td>Switch2</td><td style="border-left: 1px solid black;">FastEthernet4/1</td><td style="border-left: 1px solid black;">Ethernet droit</td><td style="border-left: 1px solid black;">PC6</td><td style="border-left: 1px solid black;">FastEthernet0</td></tr>
+
+	  <tr><td>Switch2</td><td style="border-left: 1px solid black;">FastEthernet5/1</td><td style="border-left: 1px solid black;">Ethernet droit</td><td style="border-left: 1px solid black;">PC7</td><td style="border-left: 1px solid black;">FastEthernet0</td></tr>
+
+	  <tr><td>Switch2</td><td style="border-left: 1px solid black;">FastEthernet6/1</td><td style="border-left: 1px solid black;">Ethernet droit</td><td style="border-left: 1px solid black;">PC8</td><td style="border-left: 1px solid black;">FastEthernet0</td></tr>
+
+	  <tr><td>Switch2</td><td style="border-left: 1px solid black;">FastEthernet7/1</td><td style="border-left: 1px solid black;">Ethernet droit</td><td style="border-left: 1px solid black;">PC9</td><td style="border-left: 1px solid black;">FastEthernet0</td></tr>
+
+	  <tr><td>Switch2</td><td style="border-left: 1px solid black;">FastEthernet8/1</td><td style="border-left: 1px solid black;">Ethernet droit</td><td style="border-left: 1px solid black;">PC10</td><td style="border-left: 1px solid black;">FastEthernet0</td></tr>
+
+	  <tr><td style="background-color:DarkGray;">Switch5</td><td style="background-color:DarkGray;border-left: 1px solid black;">FastEthernet7/1</td><td style="background-color:DarkGray;border-left: 1px solid black;">Ethernet droit</td><td style="background-color:DarkGray;border-left: 1px solid black;">PC1</td><td style="background-color:DarkGray;border-left: 1px solid black;">FastEthernet0</td></tr>
+
+	  <tr><td style="background-color:DarkGray;">Switch5</td><td style="background-color:DarkGray;border-left: 1px solid black;">FastEthernet8/1</td><td style="background-color:DarkGray;border-left: 1px solid black;">Ethernet droit</td><td style="background-color:DarkGray;border-left: 1px solid black;">PC2</td><td style="background-color:DarkGray;border-left: 1px solid black;">FastEthernet0</td></tr>
+	  
+	</table>
+
+	<h4>Vérification</h4>
+
+	<div class="double_5050">
+	  <div class="colonne_gauche">
+	    <ol>
+	      <li><b>Faites</b> un clic gauche sur l'icône de Packet Tracer dans la barre des tâches de Windows.</li>
+	      <li><b>Faites</b> un clic gauche sur PT Activity.</li>
+	      <li><b>Faites</b> un clic gauche sur le bouton "Check Results" dans la fenêtre de PT Activity.</li>
+	    </ol>
+	  </div>
+	  <div class="colonne_droite">
+	    <div class="image_centree"><img  style="max-width: 30vw;border: 2px solid black;" src="images/salle_de_classe_01_10.jpg" alt=""><br/><br/>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="double_5050">
+	  <div class="colonne_gauche">
+	    <p><b>Assurez-vous</b> d'être sur l'onglet "Assessment Items", et, si ce n'est pas le cas, faites un clic gauche dessus.</p>
+
+	    <p>Dans cette fenêtre, vous pouvez:</p>
+	    <ol>
+	      <li>Connaitre votre score, qui doit être, si tout est juste, de 99/99.</li>
+	      <li>Savoir là où il y a des erreurs, et pouvoir ainsi les corriger.</li>
+	    </ol>
+	  </div>
+	  <div class="colonne_droite">
+	    <div class="image_centree"><img  style="max-width: 30vw;border: 2px solid black;" src="images/salle_de_classe_01_11.jpg" alt=""><br/><br/>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="double_1090">
+	  <div class="colonne_gauche">
+	    <img style="max-width: 50vw;" src="images/travail.jpg" alt=""> 
+	  </div>
+	  <div class="colonne_droite"><h3>Transfert du travail</h3></div>
+	</div>
+
+	<p><b>Enregistrez</b> votre travail, et <b>transférez-le</b> au professeur.</p>
+
+	<!--         Bouttons de navigation                -->
+	<p></p>
+	<div class="tablesansbords">
+	  <table style="width: 100%;">
+	    <tr>
+	      <td>
+		
+	      </td>
+	      <td style="text-align: right;">
+		<form action="reseauxinfo_2.html" method="get">
+		  <input type="submit" value="Suite" />
+		</form>
+	      </td>
+	    </tr>
+	  </table>
+	</div>
+
+	<p style="text-align: right;">(cc) J. Ahmad - Education Nationale - 2020</p>
+
+      </div> <!-- justifie -->
+
+    </div> <!-- contenu -->
+
+  </body>
+</html>

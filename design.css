@@ -1,0 +1,328 @@
+body
+{
+    /*-moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;*/
+    
+    margin: 0vw;
+
+}
+
+/*--------------------- Contenu (tout) -----------------------------*/
+
+.contenu
+{
+    text-align: left;
+    font-size: 1.3vw;
+    color: black;
+    font-family: serif;
+}
+
+/* Contenu justifie */
+
+.contenu .justifie
+{
+    width: 73vw;
+    margin: 0vw auto;
+}
+
+/* Gros titre */
+
+.contenu .gros_titre
+{
+    text-align: center;
+    
+    background-image: linear-gradient(to top, #cffbfb 80%, #03c0c0 100%);
+    border-bottom: 0.07vw solid black;
+}
+
+.contenu .gros_titre h1
+{
+    
+    font-size: 3.6vw;
+}
+
+.contenu .gros_titre .navigation
+{
+    
+    overflow: hidden;
+}
+
+.contenu .gros_titre .navigation a
+{
+    
+    float: left;
+    font-size: 1.8vw;
+    font-weight: bold;
+    color: black;
+    padding: 0.7vw 0.8vw;
+    text-decoration: none;
+}
+
+.contenu .gros_titre .navigation a.lien_actif
+{
+    background-color: #03c0c0;
+}
+
+.contenu .gros_titre .navigation a:hover {
+    background-color: #faa01b;
+}
+
+/* Titres */
+
+.contenu h2 {
+    
+    background-image: linear-gradient(to top, #cffbfb 80%, #cffbfb 100%);
+    border-bottom: 0.07vw solid black;
+}
+
+.contenu h3 {
+    border-bottom: 0.07vw solid blue;
+}
+
+.contenu h4 {
+    text-decoration: underline;
+}
+
+/* Titre avec illustration 10% 90% */
+
+.contenu .double_1090
+{
+    position: relative;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+
+.contenu .double_1090:after
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.contenu .double_1090 .colonne_gauche
+{
+    float: left;
+    width: 8%;
+}
+
+.contenu .double_1090 .colonne_droite
+{
+    float: left;
+    width: 90%;
+
+    position: absolute;
+    bottom: -1.5vw;
+    right: 0;
+}
+
+/* Titre avec illustration 20% 80% */
+
+.contenu .double_2080
+{
+    position: relative;
+    margin-top: 2vw;
+}
+
+.contenu .double_2080:after
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.contenu .double_2080 .colonne_gauche
+{
+    float: left;
+    width: 18%;
+}
+
+.contenu .double_2080 .colonne_droite
+{
+    float: left;
+    width: 80%;
+
+    position: absolute;
+    bottom: -1.5vw;
+    right: 0;
+}
+
+/* Paragraphes */
+
+.contenu p
+{
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* Tableaux */
+
+.contenu table {
+    border-collapse: collapse;
+    border: 0.1vw solid black;
+}
+
+.contenu td {
+    font-size: 1.3vw;
+    border: 0.1vw solid black;
+    padding: 0.5vw;
+}
+
+.contenu .tablesansbords table {
+    border-collapse: collapse;
+    border: 0vw solid black;
+}
+
+.contenu .tablesansbords td {
+    border: 0vw solid black;
+    padding: 0.5vw;
+}
+
+/* Listes */
+
+.contenu li:not(:first-child) {
+    margin-top: .5vw;
+}
+
+/* Entrees */
+
+.contenu input {
+    font-size: 1.3vw;
+}
+
+.contenu textarea {
+    font-size: 1.3vw;
+}
+
+/* Messages d'avertissement */
+
+.contenu .avertissements {
+    font-size: 1.3vw;
+    color: red;
+}
+
+/* Vecteurs */
+
+.contenu .vecteur::after {
+    content: "\2192";
+    position: relative;
+    left: -0.8vw;
+    top: -1em;
+    font-size: 70%;
+}
+
+.contenu .vecteur_indice {
+    position: relative;
+    left: -0.8vw;
+    top: 0.3em;
+    font-size: 80%;
+}
+
+/* Texte en double colonne 75% 25% */
+
+.contenu .double_7525:after
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.contenu .double_7525 .colonne_gauche
+{
+    float: left;
+    width: 73%;
+}
+
+.contenu .double_7525 .colonne_droite
+{
+    float: left;
+    width: 23%;
+    margin-left: 2.6vw;
+}
+
+/* Texte en double colonne 50% 50% */
+
+.contenu .double_5050:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.contenu .double_5050 .colonne_gauche {
+    float: left;
+    width: 48%;
+}
+
+.contenu .double_5050 .colonne_droite {
+    float: left;
+    width: 48%;
+    margin-left: 2.6vw;
+}
+
+/* Images */
+
+.contenu img
+{ 
+    width: 100%;
+    height: auto;
+}
+
+.contenu .image_centree
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Videos */
+
+.contenu video
+{ 
+    width: 100%;
+    height: auto;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contenu .video_centree
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contenu select
+{
+    font-size: 1.3vw;
+}
+
+/* Code */
+
+.contenu .code
+{
+    font-family: monospace;
+    margin-bottom: 1.3vw;
+
+    border-top: 0.07vw solid black; 
+    border-bottom: 0.07vw solid black;
+    border-left: 0.07vw solid black;
+    border-right: 0.07vw solid black;
+
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.contenu .code_dans_texte
+{
+    font-family: monospace;
+    margin-bottom: 1.3vw;
+}

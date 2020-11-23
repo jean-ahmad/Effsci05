@@ -1,0 +1,769 @@
+<!-- <!DOCTYPE html>-->
+
+<html lang="fr">
+
+  <head>
+    <title>Réseaux informatiques</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" media="screen" type="text/css" title="Design" href="design.css" />
+  </head>
+
+  <body>
+    
+    <div class="contenu">
+      
+      <!--             Titre                -->
+      <div class="gros_titre">
+	<h1>Réseaux informatiques</h1>
+	<img style="max-width: 70vw;" src="images/titre.jpg" alt="">
+	
+	<!--             Navigation                -->
+	<div class="navigation">
+	  <a style="width: 13vw; height: 4vw;border-right: 0.1vw solid #000000;" href="reseauxinfo_1.html">
+	    Interconnexion
+	  </a>
+	  <a style="width: 13vw; height: 4vw;border-right: 0.1vw solid #000000;" class="lien_actif" href="reseauxinfo_2.html">
+	    Adressage
+	  </a>
+	  <a style="width: 13vw; height: 4vw;border-right: 0.1vw solid #000000;" href="reseauxinfo_3.html">
+	    Routage
+	  </a>
+	</div>
+      </div>
+      
+      <!--             Questions               -->
+      <div class="justifie">
+	
+	<h2>Adressage des hôtes dans un réseau local</h2>
+
+	<div class="double_5050">
+	  <div class="colonne_gauche">
+	    <p>
+	      La tablette, le smartphone, le disque dur, et l'ordinateur portable, dans l'illustration ci-contre, peuvent communiquer ensemble dans un réseau local. Pour cela, il suffit de les interconnecter en étoile, avec un commutateur, et leur attribuer des paramètres réseau.
+	    </p>
+
+	    <p>Rappelons qu'un réseau local est un ensemble d'hôtes qui se situent dans un espace réduit, et qui partagent des caractéristiques matériels communes.</p>
+	  </div>
+	  <div class="colonne_droite">
+	    <div class="image_centree"><img  style="max-width: 30vw;border: 0px solid black;" src="images/sous_reseau_01.jpg" alt=""><br/><br/>
+	    </div>
+	  </div>
+	</div>
+
+	<h3>L'adressage IP version 4</h3>
+
+	<p>Pour qu'un hôte puisse envoyer et recevoir des données dans un réseau local, il faut lui attribuer:</p>
+
+	<div class="double_5050">
+	  <div class="colonne_gauche">
+	    <ul>
+	      <li>Une adresse IP qui, en version 4, est composée de quatre chiffres séparés par un point (ex: 192.168.0.1), et doit être unique pour chacun des hôtes.</li>
+	      <li>Un masque de sous-réseau qui, contrairement à la manière dont il est exprimé dans la capture d'écran ci-contre, est aussi composé de quatre chiffres séparés par un point.
+	    </ul>
+	  </div>
+	  <div class="colonne_droite">
+	    <div class="image_centree"><img  style="max-width: 30vw;border: 2px solid black;" src="images/sous_reseau_02.jpg" alt=""><br/>Paramètres réseau configurés sur un ordinateur<br/>
+	    </div>
+	  </div>
+	</div>
+	
+
+	<h4>Les sous-réseaux:</h4>
+
+	<p>Les sous-réseaux servent à faire un découpage virtuel, par les adresses IP, d'un réseau informatique. La façon la plus directe de faire communiquer entre eux des hôtes dans un réseau local, c'est de leur attribuer des adresses IP d'un même sous-réseau.</p>
+
+	<p>Une adresse IP se décompose en d'une part l'identifiant du réseau, ou <b>NetId</b>, et d'autre part l'identifiant de l'hôte, ou <b>HostId</b>. Les adresses IP d'un même sous-réseau ont toutes le même NetId.</p>
+
+	<p>C'est le masque de sous-réseau qui sert à délimiter les parties NetId et HostId dans les adresses IP. Un masque de sous-réseau commence toujours par une suite de bits à 1, qui délimitent le NetId, suivis par une suite de bits à 0, qui délimitent l'HostId.</p>
+
+	<h5>Exemple:</h5>
+
+	<p>On considère les paramètres réseau, d'un ordinateur, suivants:</p>
+	
+	<ul>
+	  <li>Adresse IP: <span style="font-family:monospace;font-weight:bold;">192.168.0.1</span></li>
+	  <li>Masque de sous-réseau: <span style="font-family:monospace;font-weight:bold;">255.254.0.0</span></li>
+	</ul>
+
+	<p>Chacun des chiffres qui composent l'adresse IP ou le masque de sous-réseau étant représentés sur 8 bits, on peut convertir les paramètres réseau en binaire comme suit:</p>
+
+	<ul>
+	  <li>Adresse IP: <span style="font-family:monospace;font-weight:bold;">11000000.1010100|0.00000000.00000001</span></li>
+	  <li>Masque de sous-réseau: <span style="font-family:monospace;font-weight:bold;">11111111.1111111|0.00000000.00000000</span></li>
+	</ul>
+
+	<p>Les 15 premiers bits à 1, dans le masque de sous-réseau, indiquent que les 15 premiers bits de l'adresse IP correspondent au NetId, et les 17 derniers bits à 0, dans le masque de sous-réseau, indiquent que les 17 derniers bits de l'adresse IP correspondent à l'HostId.</p>
+
+	<h4>Questions sur les sous-réseaux:</h4>
+
+	<p>&clubs; <b>Convertissez</b>, en binaire et en séparant les parties NetId et HostId, les paramètres réseau suivants:</p>
+
+	<ul>
+	  <li>
+	    <p>Paramètres en décimal:</p>
+	    <ul>
+	      <li>Adresse IP: <span style="font-family:monospace;font-weight:bold;">172.16.1.102</span></li>
+	      <li>Masque de sous-réseau: <span style="font-family:monospace;font-weight:bold;">255.240.0.0</span></li>
+	    </ul>
+	    
+	    <p>Paramètres en binaire:</p>
+	    <ul>
+	      <li><span style="font-family:monospace;font-weight:bold;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="35" size="20"> | <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="35" size="20"></span></li>
+	      <li><span style="font-family:monospace;font-weight:bold;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="35" size="20"> | <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="35" size="20"></span></li>
+	    </ul>
+	    
+	    <p>Ajoutez, si besoin, un commentaire:</p>
+	    <textarea cols="70" maxlength="3000" rows="10"
+		      wrap="hard" placeholder="Ecrivez votre commentaire ici."></textarea>
+	  </li>
+	</ul>
+
+	<ul>
+	  <li>
+	    <p>Paramètres en décimal:</p>
+	    <ul>
+	      <li>Adresse IP: <span style="font-family:monospace;font-weight:bold;">102.40.7.88</li>
+	      <li>Masque de sous-réseau: <span style="font-family:monospace;font-weight:bold;">255.255.224.0</span></li>
+	    </ul>
+	    
+	    <p>Paramètres en binaire:</p>
+	    <ul>
+	      <li><span style="font-family:monospace;font-weight:bold;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="35" size="20"> | <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="35" size="20"></span></li>
+	      <li><span style="font-family:monospace;font-weight:bold;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="35" size="20"> | <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="35" size="20"></li>
+	    </ul>
+	    
+	    <p>Ajoutez, si besoin, un commentaire:</p>
+	    <textarea cols="70" maxlength="3000" rows="10"
+		      wrap="hard" placeholder="Ecrivez votre commentaire ici."></textarea>
+	  </li>
+	</ul>
+	
+	<p>&clubs; <b>Convertissez</b>, en décimal, les paramètres réseau suivants:</p>
+
+	<ul>
+	  <li>
+	    <p>Paramètres en binaire:</p>
+	    <ul>
+	      <li>Adresse IP: <span style="font-family:monospace;font-weight:bold;">11000000.10101000.00001010.00110110</span></li>
+	      <li>Masque de sous-réseau: <span style="font-family:monospace;font-weight:bold;">11111111.11111111.11111110.00000000</span></li>
+	    </ul>
+
+	    <p>Paramètres en décimal:</p>
+	    <ul>
+	      <li><span style="font-family:monospace;font-weight:bold;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="15" size="20"></span></li>
+	      <li><span style="font-family:monospace;font-weight:bold;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="15" size="20"></span></li>
+	    </ul>
+	    
+	    <p>Ajoutez, si besoin, un commentaire:</p>
+	    <textarea cols="70" maxlength="3000" rows="10"
+		      wrap="hard" placeholder="Ecrivez votre commentaire ici."></textarea>
+	  </li>
+	</ul>
+	
+	<h4>Plage d'adresses d'un sous-réseau:</h4>
+
+	<p>Pour faire communiquer directement, dans un réseau local, des hôtes, il suffit de leur attribuer le même masque de sous-réseau. Ainsi, comme nous l'avons vu dans la partie précédente, ils auront tous des adresses IP avec le même NetId. Par contre, chacun d'entre eux doit avoir une adresse IP avec un HostId différent des autres.</p>
+
+	<p>L'ensemble des adresses IP, dans l'ordre croissant et avec toutes les combinaisons binaires des bits de la partie HostId, constitue la plage d'adresses d'un sous-réseau. Pour chaque plage d'adresses, il y a deux adresses particulières:</p>
+
+	<ul>
+	  <li>La première adresse IP, avec tous les bits de la partie HostId à 0, qui s'appelle <b>l'adresse du réseau</b>. Elle ne peut pas être utilisée pour configurer un hôte.</li>
+	  <li>La dernière adresse IP, avec tous les bits de la partie HostId à 1, qui s'appelle <b>l'adresse de broadcast</b>. Elle ne peut pas être utilisée pour configurer un hôte, et permet à un hôte dans un sous-réseau de communiquer simultanément avec tous les autres hôtes du même sous-réseau.</li>
+	</ul>
+
+	<h5>Exemple:</h5>
+
+	<p>On considère les paramètres d'un sous-réseau suivants:</p>
+
+	<ul>
+	  <li>Adresse du réseau: <span style="font-family:monospace;font-weight:bold;">192.16.10.0</span></li>
+	  <li>Masque de sous-réseau: <span style="font-family:monospace;font-weight:bold;">255.255.255.248</span></li>
+	</ul>
+
+	<p>Les paramètres du sous-réseau convertis en binaire sont:</p>
+
+	<ul>
+	  <li>Adresse du réseau: <span style="font-family:monospace;font-weight:bold;">11000000.00010000.00001010.00000|000</span></li>
+	  <li>Masque de sous-réseau: <span style="font-family:monospace;font-weight:bold;">11111111.11111111.11111111.11111|000</span></li>
+	</ul>
+
+	<p>La plage des adresses IP du sous-réseau est:</p>
+
+	<table style="border: 1px solid black;margin-left:auto;margin-right:auto;text-align:center;width:50%;">
+	  <tr>
+	    <td style="border: 0px solid black;">192.16.10.0</td><td style="border: 0px solid black;">Adresse du réseau</td>
+	  </tr>
+	  <tr>
+	    <td style="border: 0px solid black;">192.16.10.1</td style="border: 0px solid black;"><td style="border: 0px solid black;">Adresse pour un hôte</td>
+	  </tr>
+	  <tr>
+	    <td style="border: 0px solid black;">192.16.10.2</td><td style="border: 0px solid black;">"</td>
+	  </tr>
+	  <tr>
+	    <td style="border: 0px solid black;">192.16.10.3</td><td style="border: 0px solid black;">"</td>
+	  </tr>
+	  <tr>
+	    <td style="border: 0px solid black;">192.16.10.4</td><td style="border: 0px solid black;">"</td>
+	  </tr>
+	  <tr>
+	    <td style="border: 0px solid black;">192.16.10.5</td><td style="border: 0px solid black;">"</td>
+	  </tr>
+	  <tr>
+	    <td style="border: 0px solid black;">192.16.10.6</td><td style="border: 0px solid black;">"</td>
+	  </tr>
+	  <tr>
+	    <td style="border: 0px solid black;">192.16.10.7</td><td style="border: 0px solid black;">Adresse de broadcast</td>
+	  </tr>
+	</table>
+
+	<p>On remarque qu'avec 3 bits disponibles pour la partie HostId, il y a <span style="font-family:monospace;font-weight:bold;color:rgb(0,0,255);">2<sup>3</sup> - 2 = 6</span> adresses IP disponibles pour les hôtes. D'une manière générale, avec <span style="font-family:monospace;font-weight:bold;color:rgb(0,0,255);">n</span> bits disponibles pour la partie HostId, il y a <span style="font-family:monospace;font-weight:bold;color:rgb(0,0,255);">2<sup>n</sup> - 2</span> adresses IP disponibles pour configurer les hôtes dans le sous-réseau.</p>
+
+	<h4>Questions sur les plages d'adresses:</h4>
+
+	<p>&clubs; <b>Calculez</b>, pour chaque plage d'adresses, le masque de sous-réseau correspondant:</p>
+
+	<ul>
+	  <li>
+	    <p>Masque de sous-réseau de la plage d'adresses <span style="font-family:monospace;font-weight:bold;">192.168.1.160 - 192.168.1.191</span>:</p>
+	    <span style="font-family:monospace;font-weight:bold;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="15" size="20"></span>
+	    
+	    <p>Ajoutez, si besoin, un commentaire:</p>
+	    <textarea cols="70" maxlength="3000" rows="10"
+		      wrap="hard" placeholder="Ecrivez votre commentaire ici."></textarea>
+	  </li>
+	</ul>
+
+	<ul>
+	  <li>
+	    <p>Masque de sous-réseau de la plage d'adresses <span style="font-family:monospace;font-weight:bold;">172.16.0.0 - 172.19.255.255</span>:</p>
+	    <span style="font-family:monospace;font-weight:bold;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="15" size="20"></span>
+	    
+	    <p>Ajoutez, si besoin, un commentaire:</p>
+	    <textarea cols="70" maxlength="3000" rows="10"
+		      wrap="hard" placeholder="Ecrivez votre commentaire ici."></textarea>
+	  </li>
+	</ul>
+
+	<h4>Adresses privées:</h4>
+
+	<p>Pour faire communiquer des hôtes dans un réseau local, relié à internet, il faut les configurer avec des adresses IP privées parce que leur utilisation n'est pas réglementée par le RIPE NCC (Réseaux IP Européens Network Coordination Centre).</p>
+	
+	<p>Il existe trois classes d'adresses privées (A, B et C) qui diffèrent par leur nombre maximum d'adresses IP disponibles:</p>
+
+	<table style="border: 1px solid black;margin-left:auto;margin-right:auto;text-align:center;width:50%;">
+	  <tr>
+	    <td style="background-color:black;color:white;border: 1px solid white;">Classe</td><td style="background-color:black;color:white;border: 1px solid white;">Adresse du réseau</td><td style="background-color:black;color:white;border: 1px solid white;">Masque de sous-réseau</td>
+	  </tr>
+	  <tr>
+	    <td>A</td><td>10.0.0.0</td><td>255.0.0.0</td>
+	  </tr>
+	  <tr>
+	    <td style="background-color:DarkGray;">B</td><td style="background-color:DarkGray;">172.16.0.0</td><td style="background-color:DarkGray;">255.240.0.0</td>
+	  </tr>
+	  <td>C</td><td>192.168.0.0</td><td>255.255.0.0</td>
+	</table>
+
+	<h5>Remarque:</h5>
+
+	<p>Pour chaque classe d'adresses privées, on peut créer autant de sous-réseau que nécessaire. Ainsi, les paramètres, adresse du réseau 192.168.1.0 et masque de sous-réseau 255.255.255.0, définissent un sous-réseau dont les adresses IP appartiennent à la classe C.</p>
+
+	<h4>Questions sur les adresses privées:</h4>
+
+	<p>&clubs; <b>Indiquez</b>, pour chacun des cas, s'il s'agit d'une adresse qui appartient à une classe privée ou pas:</p>
+
+	<ul>
+	  <li>
+	    <p><span style="font-family:monospace;font-weight:bold;">172.28.10.2</span>
+	      <form style="">
+		<input type="radio" name="" value="">Vrai
+		<input type="radio" name="" value="">Faux
+	      </form>
+	    </p>
+	  </li>
+	  
+	  <li>
+	    <p><span style="font-family:monospace;font-weight:bold;">11.0.0.2</span>
+	      <form style="">
+		<input type="radio" name="" value="">Vrai
+		<input type="radio" name="" value="">Faux
+	      </form>
+	    </p>
+	  </li>
+	  
+	  <li>
+	    <p><span style="font-family:monospace;font-weight:bold;">173.16.0.1</span>
+	      <form style="">
+		<input type="radio" name="" value="">Vrai
+		<input type="radio" name="" value="">Faux
+	      </form>
+	    </p>
+	  </li>
+	  
+	  <li>
+	    <p><span style="font-family:monospace;font-weight:bold;">192.168.255.254</span>
+	      <form style="">
+		<input type="radio" name="" value="">Vrai
+		<input type="radio" name="" value="">Faux
+	      </form>
+	    </p>
+	    
+	    <p>Ajoutez, si besoin, un commentaire:</p>
+	    <textarea cols="70" maxlength="3000" rows="10"
+		      wrap="hard" placeholder="Ecrivez votre commentaire ici."></textarea>
+	  </li>
+	</ul>
+
+	  <h3>Exemple</h3>
+
+	  <p>L'illustration ci-dessous montre une des possibilités de configuration des paramètres réseau de la tablette, du smartphone, du disque dur, et de l'ordinateur portable présentés en début de chapitre.</p>
+
+	  <div class="image_centree"><img style="max-width: 60vw;border: 2px solid black;" src="images/sous_reseau_03.jpg" alt=""><br/><br/></div>
+
+	<p>Le masque de sous-réseau choisi attribue 3 bits à la partie HostId. Le sous-réseau, engendré par le masque, dispose donc de <span style="font-family:monospace;font-weight:bold;color:rgb(0,0,255);">2<sup>3</sup> - 2 = 6</span> adresses IP, ce qui est suffisant pour configurer les 4 hôtes présents dans le réseau local.</p>
+
+	<p>Les adresses IP choisies appartiennent toutes à la classe C, car celle-ci dispose d'un maximum d'adresses, <span style="font-family:monospace;font-weight:bold;color:rgb(0,0,255);">2<sup>16</sup> - 2 = 65534</span>, suffisant pour satisfaire les besoins du problème.</p>
+
+	<h4>Questions:</h4>
+
+	<p>&clubs; <b>Indiquez</b> l'adresse du réseau qui correspond à la plage d'adresse utilisée pour configurer, dans l'exemple ci-dessus, la tablette, le smartphone, le disque dur, et l'ordinateur portable:</p>
+
+	<ul>
+	  <span style="font-family:monospace;font-weight:bold;"><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="15" size="20"></span>
+	  
+	  <p>Ajoutez, si besoin, un commentaire:</p>
+	  <textarea cols="70" maxlength="3000" rows="10"
+		    wrap="hard" placeholder="Ecrivez votre commentaire ici."></textarea>
+	</ul>
+	
+	<h2>Réseau informatique d'un hôpital</h2>
+
+	<div class="double_5050">
+	  <div class="colonne_gauche">
+	    <p>Le réseau informatique, dans l'image ci-contre, de l'hôpital est composé de 3 sous-réseaux, et il est connecté à internet. Les hôtes dans leurs sous-réseaux respectifs sont:</p>
+	    <ul>
+	      <li>Sous-réseau 1: PC1, PC2, PC3, PC4, PC5.</li>
+	      <li>Sous-réseau 2: PC6, PC7, PC8, PC9.</li>
+	      <li>Sous-réseau 3: PC10, PC11, PC12, PC13.</li>
+	      <li>Internet: serveur 1.</li>
+	    </ul>
+
+	    <p>Le but de l'exercice est de compléter le réseau informatique de l'hôpital avec:</p>
+	    <ul>
+	      <li>L'installation des adaptateurs réseau.</li>
+	      <li>L'interconnexion des hôtes avec les appareils d'infrastructure.</li>
+	      <li>La configuration des paramètres réseau:
+		<p><ul>
+		    <li>Adresse IPv4 et masque de sous-réseau,</li>
+		    <li>SSID et Authentication pour les connexions sans-fil.</li>
+		</ul></p>
+	    </ul>
+
+	    <p>Les adresses des sous-réseaux en notation CIDR, le chiffre après l'adresse réseau représente le nombre de bits à 1 dans le masque de sous-réseau, sont:</p>
+	    <ul>
+	      <li>Sous-réseau 1: <span style="font-family:monospace;font-weight:bold;">192.168.1.224/27</span></li>
+	      <li>Sous-réseau 2: <span style="font-family:monospace;font-weight:bold;">192.168.2.64/26</span></li>
+	      <li>Sous-réseau 3: <span style="font-family:monospace;font-weight:bold;">172.18.0.0/15</span></li>
+	      <li>Internet: <span style="font-family:monospace;font-weight:bold;">8.1.84.0/22</span></li>
+	    </ul>
+	  </div>
+	  <div class="colonne_droite">
+	    <div class="image_centree"><img  style="max-width: 30vw;border: 2px solid black;" src="images/hopital_01_1.jpg" alt=""><br/><br/>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="double_1090">
+	  <div class="colonne_gauche">
+	    <img style="max-width: 50vw;" src="images/maj.jpg" alt=""> <!-- 262 250 -->
+	  </div>
+	  <div class="colonne_droite"><h3>Installation des documents de travail</h3></div>
+	</div>
+
+	<ul>
+	  <li><b>Téléchargez</b> le fichier <a href="https://drive.google.com/file/d/1HclgftzzZSAX-toNgaZcInmbdU9_6t2g/view?usp=sharing">hopital.zip</a> et sauvegardez-le sur votre clé USB ou, à défaut, dans votre espace de personnel.</li>
+	  <li><b>Faites</b> un clic droit sur le fichier "hopital.zip", et <b>sélectionnez</b> "extraire tout".</li>
+	  <li><b>Faites</b> un double clic gauche sur le dossier "hopital" qui a été extrait, puis sur le fichier "hopital.pka" à l'intérieur du dossier.</li>
+	</ul>
+
+	<div class="double_1090">
+	  <div class="colonne_gauche">
+	    <img style="max-width: 50vw;" src="images/finalisation.jpg" alt=""> <!-- 262 250 -->
+	  </div>
+	  <div class="colonne_droite"><h3>Finalisation du réseau de l'hôpital</h3></div>
+	</div>
+
+	<div class="double_5050">
+	  <div class="colonne_gauche">
+	    <ul>
+	      <li><span style="color:rgb(255,0,0);">N'oubliez pas de sauvegarder régulièrement votre travail. Transférez-le, voir "transfert du travail" en fin de chapitre, à la fin de chaque séance.</span></li>
+	    </ul>
+	  </div>
+	  <div class="colonne_droite">
+	    <div class="image_centree"><img  style="max-width: 30vw;border: 2px solid black;" src="images/salle_de_classe_01_1.jpg" alt=""><br/><br/>
+	    </div>
+	  </div>
+	</div>
+
+	<h4>Installation des adaptateurs réseau et interconnexion:</h4>
+
+	<div class="double_5050">
+	  <div class="colonne_gauche">
+	    <ul>
+	      <li><b>Faites</b> un clic gauche sur "Serveur 1", et constatez qu'il n'y a aucun module installé sur le serveur.</li>
+	    </ul>
+	  </div>
+	  <div class="colonne_droite">
+	    <div class="image_centree"><img  style="max-width: 30vw;border: 2px solid black;" src="images/hopital_02.jpg" alt=""><br/><br/>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="double_5050">
+	  <div class="colonne_gauche">
+	    <ul>
+	      <li><p><b>Faites</b> un clic gauche sur "Cloud 1", et constatez qu'il y a deux modules, PT-CLOUD-NM-1CFE et PT-CLOUD-NM-1FGE, installés sur le cloud.<p>
+	      <p>Le serveur étant à l'extérieur de l'hôpital, il est nécessairement connecté au cloud qui représente internet. Le réseau de l'hôpital étant, quant à lui, connecté au cloud par l'intermédiaire de la fibre optique, le serveur ne peut donc être connecté que sur le second module, liaison filaire Fast-Ethernet, du cloud.</p></li>
+	    </ul>
+	  </div>
+	  <div class="colonne_droite">
+	    <div class="image_centree"><img  style="max-width: 30vw;border: 2px solid black;" src="images/hopital_03.jpg" alt=""><br/><br/>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="double_5050">
+	  <div class="colonne_gauche">
+	    <ol>
+	      <li><b>Installez</b> le module PT-HOST-NM-1CFE sur le serveur.</li>
+	      <li><p><b>Connectez</b> le serveur et le cloud avec un câble Ethernet droit.</p>
+		
+		
+		<p>Dans Packet Tracer, il y a généralement des voyants de liaison aux deux extrémités de la connexion qui relie deux appareils. Certaines connexions n'ont pas de voyants de liaison.</p>
+		
+		<p>La couleur du voyant indique l'état de la liaison:</p>
+		<ul>
+		  <li>Vert clair: le média choisi est correct, et la liaison physique est établie.</li>
+		  <li>Vert clignotant: des données sont échangées à travers le média.</li>
+		  <li>Rouge: le média choisi est incorrect, et aucun signal ne peut être transmis.</li>
+		  <li>Ambre: le port du commutateur est dans l'état bloqué à cause d'une boucle.</li>
+		</ul>
+	      </li>
+	    </ol>
+	  </div>
+	  <div class="colonne_droite">
+	    <div class="image_centree"><img  style="max-width: 30vw;border: 2px solid black;" src="images/hopital_04.jpg" alt=""><br/>Les voyants de liaison sont les gros points en vert clair<br/>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="double_5050">
+	  <div class="colonne_gauche">
+	    <ul>
+	      <li><b>Terminez</b> l'installation des adaptateurs réseau et l'interconnexion en tenant compte des remarques suivantes:
+		<p>
+		  <ul>
+		    <li>Il est impossible de déplacer les hôtes ou les appareils d'infrastructure. Une boite de dialogue avec le message "Move Devices is locked" apparait si vous essayez de le faire.</li>
+		    <li>Il est impossible de changer la configuration matérielle des appareils d'infrastructure, ainsi que la liaison par la fibre optique entre le routeur et le cloud. Une boite de dialogue avec le message "Add/Change Interfaces is locked" apparait si vous essayez de le faire.</li>
+		    <li>Lors du raccordement d'un hôte au réseau de l'hôpital, il faut choisir l'appareil d'infrastructure le plus proche. Si le câble est trop long, aucun signal ne pourra être transmis, et les voyants de liaison apparaîtront en rouge.</li>
+		  </ul>
+		</p>
+	      </li>
+	      <li><b>Vérifiez</b> votre score qui doit être, à la fin de cette étape, de 30/58.</li>
+	    </ul>
+	  </div>
+	  <div class="colonne_droite">
+	    <div class="image_centree"><img  style="max-width: 30vw;border: 2px solid black;" src="images/hopital_05.jpg" alt=""><br/><br/>
+	    </div>
+	  </div>
+	</div>
+
+	<h4>Configuration des paramètres réseau:</h4>
+
+	<div class="double_5050">
+	  <div class="colonne_gauche">
+	    <ol>
+	      <li><b>Faites</b> un clic gauche sur "PC1".</li>
+	      <li><b>Assurez-vous</b> d'être, dans la fenêtre de configuration du PC qui s'ouvre, sur l'onglet "Desktop".</li>
+	      <li><b>Faites</b> un clic gauche sur "IP Configuration".</li>
+	      <li><p><b>Faites</b> un clic gauche, dans la zone "IP Configuration", sur le bouton "Static" permettant de configurer manuellement les paramètres réseau, et <b>modifiez</b> les paramètres suivants:</p>
+		<ul>
+		  <li>L'adresse IPv4 dans la boite de dialogue en face du champ "IP Adress" (ex: 192.168.0.1).</li>
+		  <li>Le masque de sous-réseau dans la boite de dialogue en face du champ "Subnet Mask" (ex: 255.255.255.0).</li>
+		</ul>
+	      </li>
+	    </ol>
+	  </div>
+	  <div class="colonne_droite">
+	    <div class="image_centree"><img  style="max-width: 30vw;border: 2px solid black;" src="images/hopital_06.jpg" alt=""><br/><br/>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="double_5050">
+	  <div class="colonne_gauche">
+	    <ul>
+	      <li><b>Terminez</b> de configurer les paramètres réseau, adresses IPv4 et masques de sous-réseau, pour tous les hôtes du réseau informatique de l'hôpital.</li>
+	      <li><b>Vérifiez</b> votre score qui doit être, à la fin de cette étape, de 58/58.</li>
+	    </ul>
+	  </div>
+	  <div class="colonne_droite">
+	    <div class="image_centree"><img  style="max-width: 30vw;border: 2px solid black;" src="images/hopital_07.jpg" alt=""><br/><br/>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="double_5050">
+	  <div class="colonne_gauche">
+	    <ol>
+	      <li><b>Faites</b> un clic gauche sur le "Point d'accès 1".</li>
+	      <li><b>Faites</b> un clic gauche sur l'onglet "Config".</li>
+	      <li><b>Sélectionnez</b> "Port 1" dans la zone de liste.</li>
+	    </ol>
+	  </div>
+	  <div class="colonne_droite">
+	    <div class="image_centree"><img  style="max-width: 30vw;border: 2px solid black;" src="images/hopital_08.jpg" alt=""><br/><br/>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="double_5050">
+	  <div class="colonne_gauche">
+	    <p>Les paramètres du point d'accès, pour connecter des hôtes sur le réseau sans fil, à relever sont:</p>
+	    <ol>
+	      <li>Le <b>SSID</b> (<i>Service Set IDentifier</i>) qui sert à identifier le réseau sans fil.</li>
+	      <li>Le mode de certification: <b>WEP, WPA-PSK ou WPA2-PSK</b>,</li>
+	      <li>La valeur de <b>Key</b> en mode WEP, ou celle de <b>Pass Phrase</b> en mode WPA-PSK ou WPA2-PSK,</li>
+	      <li>Le type de cryptage dans <b>Encryption Type</b>.</li>
+	    </ol>
+	  </div>
+	  <div class="colonne_droite">
+	    <div class="image_centree"><img  style="max-width: 30vw;border: 2px solid black;" src="images/hopital_09.jpg" alt=""><br/><br/>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="double_5050">
+	  <div class="colonne_gauche">
+	    <ol>
+	      <li><b>Faites</b> un clic gauche sur un PC à connecter au réseau sans fil.</li>
+	      <li><b>Faites</b> un clic gauche sur l'onglet "Config".</li>
+	      <li><b>Sélectionnez</b> "Wireless0" dans la zone de liste.</li>
+	    </ol>
+	  </div>
+	  <div class="colonne_droite">
+	    <div class="image_centree"><img  style="max-width: 30vw;border: 2px solid black;" src="images/hopital_10.jpg" alt=""><br/><br/>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="double_5050">
+	  <div class="colonne_gauche">
+	    <p><b>Reportez</b> les paramètres du réseau sans fil, pour se connecter sur le "Point d'accès 1", sur le PC:</p>
+	    <ol>
+	      <li>Le <b>SSID</b>,</li>
+	      <li>Le mode de certification,</li>
+	      <li>La valeur de <b>Key</b>, ou celle de <b>Pass Phrase</b>,</li>
+	      <li>Le type de cryptage.</li>
+	    </ol>
+	  </div>
+	  <div class="colonne_droite">
+	    <div class="image_centree"><img  style="max-width: 30vw;border: 2px solid black;" src="images/hopital_11.jpg" alt=""><br/><br/>
+	    </div>
+	  </div>
+	</div>
+
+
+	<div class="double_5050">
+	  <div class="colonne_gauche">
+	    <p>Quelques instants après avoir configurés les paramètres du réseau sans fil et s'ils sont corrects, une ligne hachurée, voir ci-contre, apparaît entre le point d'accès et le PC.</p>
+
+	    <p><b>Terminez</b> de configurer les paramètres du réseau sans fil sur les PCs qui le nécessitent.</p>
+	  </div>
+	  <div class="colonne_droite">
+	    <div class="image_centree"><img  style="max-width: 30vw;border: 2px solid black;" src="images/hopital_12.jpg" alt=""><br/><br/>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="double_1090">
+	  <div class="colonne_gauche">
+	    <img style="max-width: 50vw;" src="images/travail.jpg" alt="">
+	  </div>
+	  <div class="colonne_droite"><h3>Transfert du travail</h3></div>
+	</div>
+	
+	<p><b>Enregistrez</b> votre travail, et <b>transférez-le</b> au professeur.</p>
+
+	<h2>Réseau informatique d'une station de recharge pour véhicules électriques</h2>
+	  
+	<div class="double_5050">
+	  <div class="colonne_gauche">
+	    <p>Pour qu'un utilisateur puisse rapidement trouver, via une application mobile, une station de recharge dans une ville, il est indispensable que chaque station communique en temps réel des données, tel que le niveau de charge des batteries, à travers un réseau informatique.</p>
+
+	    
+	  </div>
+	  <div class="colonne_droite">
+	    <div class="image_centree"><img  style="max-width: 30vw;border: 2px solid black;" src="images/station_recharge_01.jpg" alt=""><br/><br/>
+	    </div>
+	  </div>
+	</div>
+
+	<p>Le réseau informatique de la station de recharge, présenté dans le synoptique ci-dessous, est composé de deux sous-réseaux. Le premier sous-réseau est constitué des bornes de recharge, et le deuxième sous-réseau est constitué du point d'accès qui sert à transmettre les données à l'exploitant. Les deux sous-réseaux sont interconnectés avec le réseau de la ville par l'intermédiaire de l'automate M340.</p>
+
+	<div class="image_centree"><img style="max-width: 60vw;border: 2px solid black;" src="images/station_recharge_02.jpg" alt=""><br/><br/></div>
+
+	<h3>Questions</h3>
+
+	<p>&clubs; <b>Configurez</b> les paramètres réseau du point d'accès situé dans le sous-réseau avec l'adresse <span style="font-family:monospace;font-weight:bold;">172.23.0.0/16</span>:</p>
+
+	<ul>
+	  <li>
+	    <p>
+	      <table style="border: 1px solid black;margin-left:auto;margin-right:auto;text-align:center;width:75%;">
+		<tr>
+		  <td style="background-color:DarkGray;width:50%;"></td><td style="background-color:DarkGray;width:50%;">Adresse IP</td>
+		</tr>
+		<tr>
+		  <td>Point d'accès</td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="15" size="20"></td>
+		</tr>
+	      </table>
+	    </p>
+	    
+	    <p>Ajoutez, si besoin, un commentaire:</p>
+	    <textarea cols="70" maxlength="3000" rows="10"
+		      wrap="hard" placeholder="Ecrivez votre commentaire ici."></textarea>
+	  </li>
+	</ul>
+
+	<ul>
+	  <li><b>Complétez</b> les informations, sur le sous-réseau avec le point d'accès, suivantes:
+	    <p>
+	      <ul>
+		<li><b>A quelle</b> classe appartiennent les adresses IP: <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="20"></li>
+		<li><b>Quelle</b> est l'adresse de broadcast: <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="15" size="20"></li>
+		<li><b>De combien</b> d'adresses IP pour les hôtes le sous-réseau dispose t'il: <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="20"></li>
+	      </ul>
+	    </p>
+	    
+	    <p>Ajoutez, si besoin, un commentaire:</p>
+	    <textarea cols="70" maxlength="3000" rows="10"
+		      wrap="hard" placeholder="Ecrivez votre commentaire ici."></textarea>
+	  </li>
+	</ul>
+
+	<p>&clubs; <b>Configurez</b> les paramètres réseau des bornes de recharge situées dans le sous-réseau avec l'adresse <span style="font-family:monospace;font-weight:bold;">192.168.172.0/24</span>:</p>
+
+	<ul>
+	  <li>
+	    <p>
+	      <table style="border: 1px solid black;margin-left:auto;margin-right:auto;text-align:center;width:75%;">
+		<tr>
+		  <td style="background-color:DarkGray;width:50%;"></td><td style="background-color:DarkGray;width:50%;">Adresse IP</td>
+		</tr>
+		<tr>
+		  <td>Borne 1</td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="15" size="20"></td>
+		</tr>
+		<tr>
+		  <td>Borne 2</td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="15" size="20"></td>
+		</tr>
+		<tr>
+		  <td>Borne 3</td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="15" size="20"></td>
+		</tr>
+		<tr>
+		  <td>Borne 4</td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="15" size="20"></td>
+		</tr>
+	      </table>
+	    </p>
+	    
+	    <p>Ajoutez, si besoin, un commentaire:</p>
+	    <textarea cols="70" maxlength="3000" rows="10"
+		      wrap="hard" placeholder="Ecrivez votre commentaire ici."></textarea>
+	  </li>
+	</ul>
+
+	<ul>
+	  <li><b>Complétez</b> les informations, sur le sous-réseau avec les bornes, suivantes:
+	    <p>
+	      <ul>
+		<li><b>A quelle</b> classe appartiennent les adresses IP: <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="20"></li>
+		<li><b>Quelle</b> est l'adresse de broadcast: <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="15" size="20"></li>
+		<li><b>De combien</b> d'adresses IP pour les hôtes le sous-réseau dispose t'il: <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="20"></li>
+	      </ul>
+	    </p>
+	    
+	    <p>Ajoutez, si besoin, un commentaire:</p>
+	    <textarea cols="70" maxlength="3000" rows="10"
+		      wrap="hard" placeholder="Ecrivez votre commentaire ici."></textarea>
+	  </li>
+	</ul>
+	  
+	<p>&clubs; <b>Configurez</b> les paramètres réseau de l'automate sachant que le sous-réseau de la ville a pour adresse <span style="font-family:monospace;font-weight:bold;">7.112.0.0/12</span>:</p>
+
+	<ul>
+	  <li>
+	    <p>
+	      <table style="border: 1px solid black;margin-left:auto;margin-right:auto;text-align:center;width:75%;">
+		<tr>
+		  <td style="background-color:DarkGray;width:50%;"></td><td style="background-color:DarkGray;width:50%;">Adresse IP</td>
+		</tr>
+		<tr>
+		  <td>côté bornes</td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="15" size="20"></td>
+		</tr>
+		<tr>
+		  <td>côté point d'accès</td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="15" size="20"></td>
+		</tr>
+		<tr>
+		  <td>côté ville</td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="15" size="20"></td>
+		</tr>
+	      </table>
+	    </p>
+	    
+	    <p>Ajoutez, si besoin, un commentaire:</p>
+	    <textarea cols="70" maxlength="3000" rows="10"
+		      wrap="hard" placeholder="Ecrivez votre commentaire ici."></textarea>
+	  </li>
+	</ul>
+
+	<ul>
+	  <li><b>Complétez</b> les informations, sur le sous-réseau de la ville, suivantes:
+	    <p>
+		  <ul>
+		    <li><b>A quelle</b> classe appartiennent les adresses IP: <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="20"></li>
+		    <li><b>Quelle</b> est l'adresse de broadcast: <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="15" size="20"></li>
+		    <li><b>De combien</b> d'adresses IP pour les hôtes le sous-réseau dispose t'il: <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="20"></li>
+		  </ul>
+	    </p>
+	    
+	    <p>Ajoutez, si besoin, un commentaire:</p>
+	    <textarea cols="70" maxlength="3000" rows="10"
+		      wrap="hard" placeholder="Ecrivez votre commentaire ici."></textarea>
+	  </li>
+	</ul>
+
+	<!--         Bouttons de navigation                -->
+	<p></p>
+	<div class="tablesansbords">
+	  <table style="width: 100%;">
+	    <tr>
+	      <td>
+		<form action="reseauxinfo_1.html" method="get">
+		  <input type="submit" value="Retour" />
+		</form>
+	      </td>
+	      <td style="text-align: right;">
+		<form action="reseauxinfo_3.html" method="get">
+		  <input type="submit" value="Suite" />
+		</form>
+	      </td>
+	    </tr>
+	  </table>
+	</div>
+
+	<p style="text-align: right;">(cc) J. Ahmad - Education Nationale - 2020</p>
+
+      </div> <!-- justifie -->
+
+    </div> <!-- contenu -->
+
+  </body>
+</html>
