@@ -1,0 +1,270 @@
+<!-- <!DOCTYPE html>-->
+
+<html lang="fr">
+
+  <head>
+    <title>Réseaux informatiques</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" media="screen" type="text/css" title="Design" href="design.css" />
+  </head>
+
+  <body>
+
+    <div class="contenu">
+      
+      <!--             Titre                -->
+      <div class="gros_titre">
+	<h1>Réseaux informatiques</h1>
+	<img style="max-width: 70vw;" src="images/titre.jpg" alt="">
+	
+	<!--             Navigation                -->
+	<div class="navigation">
+	  <a style="width: 13vw; height: 4vw;border-right: 0.1vw solid #000000;" href="reseauxinfo_1.html">
+	    Interconnexion
+	  </a>
+	  <a style="width: 13vw; height: 4vw;border-right: 0.1vw solid #000000;" href="reseauxinfo_2.html">
+	    Adressage 1
+	  </a>
+	  <a style="width: 13vw; height: 4vw;border-right: 0.1vw solid #000000;" href="reseauxinfo_3.html">
+	    Adressage 2
+	  </a>
+	  <a style="width: 13vw; height: 4vw;border-right: 0.1vw solid #000000;" class="lien_actif" href="reseauxinfo_4.html">
+	    Adressage 3
+	  </a>
+	  <a style="width: 13vw; height: 4vw;border-right: 0.1vw solid #000000;" href="reseauxinfo_5.html">
+	    Routage 1
+	  </a>
+	  <a style="width: 13vw; height: 4vw;border-right: 0.1vw solid #000000;" href="reseauxinfo_6.html">
+	    Routage 2
+	  </a>
+	</div>
+      </div>
+      
+      <!--             Questions               -->
+      <div class="justifie">
+	
+	<h2>Réseau informatique d'une station de recharge pour véhicules électriques</h2>
+	  
+	<div class="double_5050">
+	  <div class="colonne_gauche">
+	    <p>Pour qu'un utilisateur puisse rapidement trouver, via une application mobile, une station de recharge dans une ville, il est indispensable que chaque station communique en temps réel des données, tel que le niveau de charge des batteries, à travers un réseau informatique.</p>
+
+	    
+	  </div>
+	  <div class="colonne_droite">
+	    <div class="image_centree"><img  style="max-width: 30vw;border: 2px solid black;" src="images/station_recharge_01.jpg" alt=""><br/><br/>
+	    </div>
+	  </div>
+	</div>
+
+	<p>Le réseau informatique de la station de recharge, présenté dans le synoptique ci-dessous, est composé de deux sous-réseaux. Le premier sous-réseau est constitué des bornes de recharge, et le deuxième sous-réseau est constitué du point d'accès qui sert à transmettre les données à l'exploitant. Les deux sous-réseaux sont interconnectés avec le réseau de la ville par l'intermédiaire de l'automate M340.</p>
+
+	<div class="image_centree"><img style="max-width: 60vw;border: 2px solid black;" src="images/station_recharge_02.jpg" alt=""><br/><br/></div>
+
+	<h3>Questions</h3>
+
+	<p>&clubs; <b>Configurez</b> les paramètres de réseau du point d'accès situé dans le sous-réseau avec l'adresse <span style="font-family:monospace;font-weight:bold;">172.23.0.0/16</span>:</p>
+	
+	<div class="double_7525">
+	  <div class="colonne_gauche">
+	    <ul>
+	      <li>
+		<p>
+		  <table style="border: 1px solid black;margin-left:auto;margin-right:auto;text-align:center;width:75%;">
+		    <tr>
+		      <td style="background-color:DarkGray;width:50%;"></td><td style="background-color:DarkGray;width:50%;">Adresse IP</td>
+		    </tr>
+		    <tr>
+		      <td>Point d'accès</td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="15" size="20"></td>
+		    </tr>
+		  </table>
+		</p>
+		
+		<p>Ajoutez, si besoin, un commentaire:</p>
+		<textarea cols="70" maxlength="65535" rows="10"
+			  wrap="hard" placeholder="Ecrivez votre commentaire ici."></textarea>
+	      </li>
+	    </ul>
+	  </div>
+	  <div class="colonne_droite">
+	    
+	  </div>
+	</div>
+
+	
+	<div class="double_7525">
+	  <div class="colonne_gauche">
+
+	    <ul>
+	      <li><b>Complétez</b> les informations, sur le sous-réseau avec le point d'accès, suivantes:
+		<p>
+		  <ul>
+		    <li><b>A quelle</b> classe appartiennent les adresses IP: <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="20"></li>
+		    <li><b>Quelle</b> est l'adresse de broadcast: <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="15" size="20"></li>
+		    <li><b>De combien</b> d'adresses IP pour les hôtes le sous-réseau dispose t'il: <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="20"></li>
+		  </ul>
+		</p>
+	      </li>
+	      
+		<p>Ajoutez, si besoin, un commentaire:</p>
+		<textarea cols="70" maxlength="65535" rows="10"
+			  wrap="hard" placeholder="Ecrivez votre commentaire ici."></textarea>
+	    </ul>
+	    
+	  </div>
+	  <div class="colonne_droite">
+	    
+	  </div>
+	</div>
+
+	<p>&clubs; <b>Configurez</b> les paramètres de réseau des bornes de recharge situées dans le sous-réseau avec l'adresse <span style="font-family:monospace;font-weight:bold;">192.168.172.0/24</span>:</p>
+	
+	<div class="double_7525">
+	  <div class="colonne_gauche">
+	    <ul>
+	      <li>
+		<p>
+		  <table style="border: 1px solid black;margin-left:auto;margin-right:auto;text-align:center;width:75%;">
+		    <tr>
+		      <td style="background-color:DarkGray;width:50%;"></td><td style="background-color:DarkGray;width:50%;">Adresse IP</td>
+		    </tr>
+		    <tr>
+		      <td>Borne 1</td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="15" size="20"></td>
+		    </tr>
+		    <tr>
+		      <td>Borne 2</td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="15" size="20"></td>
+		    </tr>
+		    <tr>
+		      <td>Borne 3</td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="15" size="20"></td>
+		    </tr>
+		    <tr>
+		      <td>Borne 4</td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="15" size="20"></td>
+		    </tr>
+		  </table>
+		</p>
+		
+		<p>Ajoutez, si besoin, un commentaire:</p>
+		<textarea cols="70" maxlength="65535" rows="10"
+			  wrap="hard" placeholder="Ecrivez votre commentaire ici."></textarea>
+	      </li>
+	    </ul>
+	  </div>
+	  <div class="colonne_droite">
+	    
+	  </div>
+	</div>
+
+	
+	<div class="double_7525">
+	  <div class="colonne_gauche">
+
+	    <ul>
+	      <li><b>Complétez</b> les informations, sur le sous-réseau avec les bornes, suivantes:
+		<p>
+		  <ul>
+		    <li><b>A quelle</b> classe appartiennent les adresses IP: <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="20"></li>
+		    <li><b>Quelle</b> est l'adresse de broadcast: <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="15" size="20"></li>
+		    <li><b>De combien</b> d'adresses IP pour les hôtes le sous-réseau dispose t'il: <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="20"></li>
+		  </ul>
+		</p>
+	      </li>
+	      
+		<p>Ajoutez, si besoin, un commentaire:</p>
+		<textarea cols="70" maxlength="65535" rows="10"
+			  wrap="hard" placeholder="Ecrivez votre commentaire ici."></textarea>
+	    </ul>
+	    
+	  </div>
+	  <div class="colonne_droite">
+	    
+	  </div>
+	</div>
+	  
+	<p>&clubs; <b>Configurez</b> les paramètres de réseau de l'automate sachant que le sous-réseau de la ville a pour adresse <span style="font-family:monospace;font-weight:bold;">7.112.0.0/12</span>:</p>
+	
+	<div class="double_7525">
+	  <div class="colonne_gauche">
+	    <ul>
+	      <li>
+		<p>
+		  <table style="border: 1px solid black;margin-left:auto;margin-right:auto;text-align:center;width:75%;">
+		    <tr>
+		      <td style="background-color:DarkGray;width:50%;"></td><td style="background-color:DarkGray;width:50%;">Adresse IP</td>
+		    </tr>
+		    <tr>
+		      <td>côté bornes</td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="15" size="20"></td>
+		    </tr>
+		    <tr>
+		      <td>côté point d'accès</td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="15" size="20"></td>
+		    </tr>
+		    <tr>
+		      <td>côté ville</td><td><input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="15" size="20"></td>
+		    </tr>
+		  </table>
+		</p>
+		
+		<p>Ajoutez, si besoin, un commentaire:</p>
+		<textarea cols="70" maxlength="65535" rows="10"
+			  wrap="hard" placeholder="Ecrivez votre commentaire ici."></textarea>
+	      </li>
+	    </ul>
+	  </div>
+	  <div class="colonne_droite">
+	    
+	  </div>
+	</div>
+
+	
+	<div class="double_7525">
+	  <div class="colonne_gauche">
+
+	    <ul>
+	      <li><b>Complétez</b> les informations, sur le sous-réseau de la ville, suivantes:
+		<p>
+		  <ul>
+		    <li><b>A quelle</b> classe appartiennent les adresses IP: <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="1" size="20"></li>
+		    <li><b>Quelle</b> est l'adresse de broadcast: <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="15" size="20"></li>
+		    <li><b>De combien</b> d'adresses IP pour les hôtes le sous-réseau dispose t'il: <input placeholder="?" style="border:1px solid #999999;text-align:center;" maxlength="7" size="20"></li>
+		  </ul>
+		</p>
+	      </li>
+	      
+		<p>Ajoutez, si besoin, un commentaire:</p>
+		<textarea cols="70" maxlength="65535" rows="10"
+			  wrap="hard" placeholder="Ecrivez votre commentaire ici."></textarea>
+	    </ul>
+	    
+	  </div>
+	  <div class="colonne_droite">
+	    
+	  </div>
+	</div>
+	
+
+	<!--         Bouttons de navigation                -->
+	<p></p>
+	<div class="tablesansbords">
+	  <table style="width: 100%;">
+	    <tr>
+	      <td>
+		<form action="reseauxinfo_3.html" method="get">
+		  <input type="submit" value="Retour" />
+		</form>
+	      </td>
+	      <td style="text-align: right;">
+		<form action="reseauxinfo_5.html" method="get">
+		  <input type="submit" value="Suite" />
+		</form>
+	      </td>
+	    </tr>
+	  </table>
+	</div>
+
+	<p style="text-align: right;">(cc) J. Ahmad - Education Nationale - 2020</p>
+
+      </div> <!-- justifie -->
+
+    </div> <!-- contenu -->
+
+  </body>
+</html>
