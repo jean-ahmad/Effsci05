@@ -23,10 +23,19 @@
 	    Interconnexion
 	  </a>
 	  <a style="width: 13vw; height: 4vw;border-right: 0.1vw solid #000000;" href="reseauxinfo_2.html">
-	    Adressage
+	    Adressage 1
 	  </a>
 	  <a style="width: 13vw; height: 4vw;border-right: 0.1vw solid #000000;" class="lien_actif" href="reseauxinfo_3.html">
-	    Routage
+	    Adressage 2
+	  </a>
+	  <a style="width: 13vw; height: 4vw;border-right: 0.1vw solid #000000;" href="reseauxinfo_4.html">
+	    Adressage 3
+	  </a>
+	  <a style="width: 13vw; height: 4vw;border-right: 0.1vw solid #000000;" href="reseauxinfo_5.html">
+	    Routage 1
+	  </a>
+	  <a style="width: 13vw; height: 4vw;border-right: 0.1vw solid #000000;" href="reseauxinfo_6.html">
+	    Routage 2
 	  </a>
 	</div>
       </div>
@@ -34,39 +43,65 @@
       <!--             Questions               -->
       <div class="justifie">
 
-	<h2>Le routage</h2>
+	<h2>Réseau informatique d'un hôpital</h2>
 
 	<div class="double_5050">
 	  <div class="colonne_gauche">
-	    <p>Pour qu'un ordinateur portable qui se connecterais au point d'accès puisse accéder au site web hébergé sur le serveur, il faut configurer les tables de routage des routeurs, pour que ceux-ci retransmettent, à travers le réseau métropolitain "MAN", les données qui transitent depuis le réseau local "LAN 1" vers le "LAN 2", et vice-versa.</p>
+	    <p>Le réseau informatique, dans l'image ci-contre, de l'hôpital est composé de 3 sous-réseaux, et il est connecté à internet. Les hôtes dans leurs sous-réseaux respectifs sont:</p>
+	    <ul>
+	      <li>Sous-réseau 1: PC1, PC2, PC3, PC4, PC5.</li>
+	      <li>Sous-réseau 2: PC6, PC7, PC8, PC9.</li>
+	      <li>Sous-réseau 3: PC10, PC11, PC12, PC13.</li>
+	      <li>Internet: serveur 1.</li>
+	    </ul>
+
+	    <p>Le but de l'exercice est de compléter le réseau informatique de l'hôpital avec:</p>
+	    <ul>
+	      <li>L'installation des adaptateurs réseau.</li>
+	      <li>L'interconnexion des hôtes avec les appareils d'infrastructure.</li>
+	      <li>La configuration des paramètres de réseau:
+		<p><ul>
+		    <li>Adresse IPv4 et masque de sous-réseau,</li>
+		    <li>SSID et Authentication pour les connexions sans-fil.</li>
+		</ul></p>
+	    </ul>
+
+	    <p>Les adresses des sous-réseaux en notation CIDR, le chiffre après l'adresse réseau représente le nombre de bits à 1 dans le masque de sous-réseau, sont:</p>
+	    <ul>
+	      <li>Sous-réseau 1: <span style="font-family:monospace;font-weight:bold;">192.168.1.224/27</span></li>
+	      <li>Sous-réseau 2: <span style="font-family:monospace;font-weight:bold;">192.168.2.64/26</span></li>
+	      <li>Sous-réseau 3: <span style="font-family:monospace;font-weight:bold;">172.18.0.0/15</span></li>
+	      <li>Internet: <span style="font-family:monospace;font-weight:bold;">8.1.84.0/22</span></li>
+	    </ul>
 	  </div>
 	  <div class="colonne_droite">
-	    <div class="image_centree"><img  style="max-width: 30vw;border: 2px solid black;" src="images/routage_02_1.jpg" alt=""><br/><br/>
+	    <div class="image_centree"><img  style="max-width: 30vw;border: 2px solid black;" src="images/hopital_01_1.jpg" alt=""><br/><br/>
 	    </div>
 	  </div>
 	</div>
 
 	<div class="double_1090">
 	  <div class="colonne_gauche">
-	    <img style="max-width: 50vw;" src="images/maj.jpg" alt="">
+	    <img style="max-width: 50vw;" src="images/maj.jpg" alt=""> <!-- 262 250 -->
 	  </div>
 	  <div class="colonne_droite"><h3>Installation des documents de travail</h3></div>
 	</div>
 
-	<p><b>Téléchargez</b> le document ressource <a href="https://drive.google.com/file/d/1j4WFRLEB2kz4_Px1BhvYRQFEBxreEOaz/view?usp=sharing">routage.pka</a> pour suivre la procédure de configuration d'un routeur, et <b>ouvrez-le</b> avec Cisco Packet Tracer.</p>
+	<p><b>Téléchargez</b> le fichier <a href="https://drive.google.com/file/d/1HclgftzzZSAX-toNgaZcInmbdU9_6t2g/view?usp=sharing">hopital.zip</a>, et sauvegardez-le sur votre clé USB ou dans votre espace de personnel.</p>
+	<p><b>Faites</b> un clic droit sur le fichier téléchargé, et <b>sélectionnez</b> "extraire tout".</p>
+	<p><b>Faites</b> un double clic gauche sur le dossier extrait, puis sur le fichier "hopital.pka" à l'intérieur du dossier.</p>
 
 	<div class="double_1090">
 	  <div class="colonne_gauche">
-	    <img style="max-width: 50vw;" src="images/finalisation.jpg" alt="">
+	    <img style="max-width: 50vw;" src="images/finalisation.jpg" alt=""> <!-- 262 250 -->
 	  </div>
-	  <div class="colonne_droite"><h3>Finalisation du réseau</h3></div>
+	  <div class="colonne_droite"><h3>Finalisation du réseau de l'hôpital</h3></div>
 	</div>
 
 	<div class="double_5050">
 	  <div class="colonne_gauche">
-	    <ul>
-	      <li><span style="color:rgb(255,0,0);">N'oubliez pas de sauvegarder régulièrement votre travail. Transférez-le, voir "transfert du travail" en fin de chapitre, à la fin de chaque séance.</span></li>
-	    </ul>
+	    <p><span style="color:rgb(255,0,0);">N'oubliez pas de sauvegarder régulièrement votre travail.</span></p>
+	    <p><span style="color:rgb(255,0,0);">Transférez-le à la fin de chaque séance (<a style="color: red;" href="#transfert_hopital">lien vers le transfert du travail</a>).</span></p>
 	  </div>
 	  <div class="colonne_droite">
 	    <div class="image_centree"><img  style="max-width: 30vw;border: 2px solid black;" src="images/salle_de_classe_01_1.jpg" alt=""><br/><br/>
@@ -74,422 +109,181 @@
 	  </div>
 	</div>
 
-	<h4>Adressage</h4>
+	<h4>Installation des adaptateurs réseau et interconnexion:</h4>
 
 	<div class="double_5050">
 	  <div class="colonne_gauche">
-	    <p><b>En basculant</b> dans l'<a href="reseauxinfo_1.html#interface_pt">espace de travail physique</a>, on peut voir l'organisation du réseau à l'échelle de la ville avec:</p>
-	    <ol>
-	      <li>Le point d'accès et sa zone de couverture. Pour qu'un hôte puisse se connecter à un point d'accès, il faut qu'il soit situé, dans l'espace de travail physique, dans le cercle hachuré en bleu, qui représente la zone de couverture.</li>
-	      <li>Le local principal de câblage dans lequel tout nouvel appareil est placé.</li>
-	    </ol>
+	    <p><b>Faites</b> un clic gauche sur "Serveur 1", et constatez qu'il n'y a aucun module installé sur le serveur.</p>
 	  </div>
 	  <div class="colonne_droite">
-	    <div class="image_centree"><img  style="max-width: 30vw;border: 2px solid black;" src="images/routage_02_2.jpg" alt=""><br/><br/>
+	    <div class="image_centree"><img  style="max-width: 30vw;border: 2px solid black;" src="images/hopital_02.jpg" alt=""><br/><br/>
 	    </div>
 	  </div>
 	</div>
 
 	<div class="double_5050">
 	  <div class="colonne_gauche">
-	    <p><b>Retournez</b> dans l'espace de travail logique et <b>installez</b> un ordinateur portable à côté du point d'accès. <b>Remplacez</b> l'adaptateur réseau de l'ordinateur portable par le PT-LAPTOP-NM-1W-A et <b>laissez</b> les paramètres sans-fil par défaut de l'adaptateur. <b>Attendez</b> un moment, et <b>constatez</b> si l'ordinateur portable parvient, ou ne parvient pas, à se connecter au point d'accès.</p>
+	    <p><b>Faites</b> un clic gauche sur "Cloud 1", et constatez qu'il y a deux modules, PT-CLOUD-NM-1CFE et PT-CLOUD-NM-1FGE, installés sur le cloud.<p>
+	    <p>Le serveur étant à l'extérieur de l'hôpital, il est nécessairement connecté au cloud qui représente internet. Le réseau de l'hôpital étant, quant à lui, connecté au cloud par l'intermédiaire de la fibre optique, le serveur ne peut donc être connecté que sur le second module, liaison filaire Fast-Ethernet, du cloud.</p>
 	  </div>
 	  <div class="colonne_droite">
-	    <div class="image_centree"><img  style="max-width: 30vw;border: 2px solid black;" src="images/routage_02_3.jpg" alt=""><br/><br/>
+	    <div class="image_centree"><img  style="max-width: 30vw;border: 2px solid black;" src="images/hopital_03.jpg" alt=""><br/><br/>
 	    </div>
 	  </div>
 	</div>
 
 	<div class="double_5050">
 	  <div class="colonne_gauche">
-	    <p><b>Retournez</b> dans l'espace de travail physique et <b>allez</b> dans le local principal de câblage, puis:</p>
-	    <ol>
-	      <li><b>Faites</b> un clic gauche sur "Move Object".</li>
-	      <li><b>Faites</b> un clic gauche sur l'ordinateur portable.</li>
-	      <li><b>Sélectionnez</b> "Home City" &#8594; "Move to Home City".</li>
-	      <li><b>Faites</b> un clic gauche sur "Back".</li>
-	    </ol>
-	  </div>
-	  <div class="colonne_droite">
-	    <div class="image_centree"><img  style="max-width: 30vw;border: 2px solid black;" src="images/routage_02_4.jpg" alt=""><br/><br/>
-	    </div>
-	  </div>
-	</div>
+	    <p><b>Installez</b> le module PT-HOST-NM-1CFE sur le serveur.</p>
+	    <p><b>Connectez</b> le serveur et le cloud avec un câble Ethernet droit.</p>
 
-	<div class="double_5050">
-	  <div class="colonne_gauche">
-	    <p><b>Faites</b> un glisser-déposer de l'ordinateur portable, qui apparait en haut à gauche dans l'espace de travail, pour le positionner dans la zone de couverture du point d'accès.</p>
-	  </div>
-	  <div class="colonne_droite">
-	    <div class="image_centree"><img  style="max-width: 30vw;border: 2px solid black;" src="images/routage_02_5.jpg" alt=""><br/><br/>
-	    </div>
-	  </div>
-	</div>
 
-	<div class="double_5050">
-	  <div class="colonne_gauche">
-	    <p><b>Retournez</b> dans l'espace de travail logique, et <b>constatez</b> que l'ordinateur portable a réussi à se connecter au point d'accès.</p>
-	  </div>
-	  <div class="colonne_droite">
-	    <div class="image_centree"><img  style="max-width: 30vw;border: 2px solid black;" src="images/routage_02_6.jpg" alt=""><br/><br/>
-	    </div>
-	  </div>
-	</div>
+	    <p>Dans Packet Tracer, il y a généralement des voyants de liaison aux deux extrémités de la connexion qui relie deux appareils. Certaines connexions n'ont pas de voyants de liaison.</p>
 
-	<div class="double_5050">
-	  <div class="colonne_gauche">
-	    <p><b>Configurez</b> les paramètres réseau, adresse IPv4 et masque de sous-réseau, des hôtes et appareils d'infrastructure dans le réseau local "LAN 1":</p>
+	    <p>La couleur du voyant indique l'état de la liaison:</p>
 	    <ul>
-	      <li>L'ordinateur portable,</li>
-	      <li>Le routeur "Routeur0":</li>
-	      <ol>
-		<li><b>Faites</b> un clic gauche sur le routeur "Routeur0".</li>
-		<li><b>Sélectionnez</b> l'onglet "Config" dans la nouvelle fenêtre qui s'ouvre.</li>
-		<li><b>Sélectionnez</b> l'adaptateur réseau "FastEthernet9/0", en constatant que le texte "9/0" qui correspond au numéro de l'adaptateur est du côté du réseau local "LAN 1", dans la zone de liste.</li>
-		<li><b>Ecrivez</b> l'adresse IP en face du champ "IP Address", et le masque de sous-réseau en face du champ "Subnet Mask".</li>
-	      </ol>
+	      <li>Vert clair: le média choisi est correct, et la liaison physique est établie.</li>
+	      <li>Vert clignotant: des données sont échangées à travers le média.</li>
+	      <li>Rouge: le média choisi est incorrect, et aucun signal ne peut être transmis.</li>
+	      <li>Ambre: le port du commutateur est dans l'état bloqué à cause d'une boucle.</li>
 	    </ul>
 	  </div>
 	  <div class="colonne_droite">
-	    <div class="image_centree"><img  style="max-width: 30vw;border: 2px solid black;" src="images/routage_02_7.jpg" alt=""><br/><br/>
+	    <div class="image_centree"><img  style="max-width: 30vw;border: 2px solid black;" src="images/hopital_04.jpg" alt=""><br/>Les voyants de liaison sont les gros points en vert clair<br/>
 	    </div>
 	  </div>
 	</div>
 
 	<div class="double_5050">
 	  <div class="colonne_gauche">
+	    <p><b>Terminez</b> l'installation des adaptateurs réseau et l'interconnexion en tenant compte des remarques suivantes:</p>
 	    <ul>
-	      <li><b>Terminez</b> de configurer les paramètres réseau des hôtes et appareils d'infrastructure dans les sous-réseaux "MAN" et "LAN 2".</li>
-	      <li><b>Vérifiez</b> votre score qui doit être, à la fin de cette étape, de 12/12.</li>
+	      <li>Il est impossible de déplacer les hôtes ou les appareils d'infrastructure. Une boite de dialogue avec le message "Move Devices is locked" apparait si vous essayez de le faire.</li>
+	      <li>Il est impossible de changer la configuration matérielle des appareils d'infrastructure, ainsi que la liaison par la fibre optique entre le routeur et le cloud. Une boite de dialogue avec le message "Add/Change Interfaces is locked" apparait si vous essayez de le faire.</li>
+	      <li>Lors du raccordement d'un hôte au réseau de l'hôpital, il faut choisir l'appareil d'infrastructure le plus proche. Si le câble est trop long, aucun signal ne pourra être transmis, et les voyants de liaison apparaîtront en rouge.</li>
 	    </ul>
+	    <p><b>Vérifiez</b> votre score qui doit être, à la fin de cette étape, de 30/58.</p>
 	  </div>
 	  <div class="colonne_droite">
-	    <div class="image_centree"><img  style="max-width: 30vw;border: 2px solid black;" src="images/routage_02_8.jpg" alt=""><br/><br/>
+	    <div class="image_centree"><img  style="max-width: 30vw;border: 2px solid black;" src="images/hopital_05.jpg" alt=""><br/><br/>
 	    </div>
 	  </div>
 	</div>
 
-	<h4>Passerelle</h4>
-
-	<div class="double_5050">
-	  <div class="colonne_gauche">
-	    <p>Essayons de nous connecter, depuis l'ordinateur portable, sur le site web hébergé sur le serveur:</p>
-	    
-	    <ol>
-	      <li><b>Faites</b> un clic gauche sur l'ordinateur portable.</li>
-	      <li><b>Sélectionnez</b> l'onglet "Desktop" dans la nouvelle fenêtre qui s'ouvre.</li>
-	      <li><b>Faites</b> un clic gauche sur "Web Browser".</li>
-	    </ol>
-	  </div>
-	  <div class="colonne_droite">
-	    <div class="image_centree"><img  style="max-width: 30vw;border: 2px solid black;" src="images/routage_02_9.jpg" alt=""><br/><br/>
-	    </div>
-	  </div>
-	</div>
+	<h4>Configuration des paramètres de réseau:</h4>
 
 	<div class="double_5050">
 	  <div class="colonne_gauche">
 	    <ol>
-	      <li><b>Saisissez</b> l'adresse IP que vous avez configuré sur le serveur précédé de "http://", et <b>appuyez</b> sur la touche "Entrée" du clavier.</li>
-	      <li><b>Constatez</b> que la requête HTTP a échoué parce que le délai, pour recevoir la réponse, a été dépassé.</li>
-	    </ol>
-	  </div>
-	  <div class="colonne_droite">
-	    <div class="image_centree"><img  style="max-width: 30vw;border: 2px solid black;" src="images/routage_02_10.jpg" alt=""><br/><br/>
-	    </div>
-	  </div>
-	</div>
-
-	<div class="double_5050">
-	  <div class="colonne_gauche">
-	    <p>Pour que la requête HTTP de l'ordinateur portable puisse atteindre le serveur, il faut que l'ordinateur portable connaisse la "porte de sortie" de son réseau local. C'est ce que l'on appelle: la passerelle. Dans ce cas, la passerelle, c'est l'interface réseau du routeur "Routeur0" du côté du réseau local "LAN 1".</p>
-	    
-	    <ul>
-	      <li><b>Retournez</b> dans les paramètres de configuration de l'ordinateur portable, et <b>saisissez</b>, en face du champ "Default Gateway", l'adresse IPv4 que vous avez configuré sur l'interface "9/0" du routeur "Routeur0".</li>
-	    </ul>
-
-	    <p>Pour que la réponse du serveur puisse atteindre l'ordinateur portable, il faut que le serveur connaisse la "porte de sortie" de son réseau local. Dans ce cas, c'est l'interface réseau du routeur "Routeur1" du côté du réseau local "LAN 2".</p>
-
-	      <ul>
-		<li><b>Allez</b> dans les paramètres de configuration du serveur, et <b>configurez</b> la passerelle avec l'adresse IPv4 que vous configuré sur l'interface "8/0" du routeur "Routeur1".</li>
-	      </ul>
-	  </div>
-	  <div class="colonne_droite">
-	    <div class="image_centree"><img  style="max-width: 30vw;border: 2px solid black;" src="images/routage_02_11.jpg" alt=""><br/><br/>
-	    </div>
-	  </div>
-	</div>
-
-	<h4>Routage</h4>
-
-	<div class="double_5050">
-	  <div class="colonne_gauche">
-	    <p>Pour que la requête HTTP émise depuis l'ordinateur portable puisse atteindre le serveur, il faut que le routeur "Routeur0" retransmette les paquets, émis depuis le réseau local "LAN 1", à travers le réseau métropolitain "MAN" via l'interface "9/0" du routeur "Routeur1". Nous allons, pour cela, définir une route dans la table de routage du routeur "Routeur0":</p>
-
-	    <ol>
-	      <li><b>Faites</b> un clic gauche sur le routeur "Routeur0".</li>
-	      <li><b>Sélectionnez</b> l'onglet "Config" dans la nouvelle fenêtre qui s'ouvre.</li>
-	      <li><b>Sélectionnez</b> "Static" dans la zone de liste.</li>
-	      <li><b>Saisissez</b> les paramètres suivants:</li>
-	      
-	      <p>
+	      <li><b>Faites</b> un clic gauche sur "PC1".</li>
+	      <li><b>Assurez-vous</b> d'être, dans la fenêtre de configuration du PC qui s'ouvre, sur l'onglet "Desktop".</li>
+	      <li><b>Faites</b> un clic gauche sur "IP Configuration".</li>
+	      <li><p><b>Faites</b> un clic gauche, dans la zone "IP Configuration", sur le bouton "Static" permettant de configurer manuellement les paramètres de réseau, et <b>modifiez</b> les paramètres suivants:</p>
 		<ul>
-		  <li>L'adresse réseau de la destination en face du champ "Network": <span style="font-family:monospace;font-weight:bold;">192.168.2.0</span></li>
-		  <li>Le masque de sous-réseau de la destination en face du champ "Mask": <span style="font-family:monospace;font-weight:bold;">255.255.255.0</span></li>
-		  <li>L'adresse IP que vous avez configuré sur l'interface "9/0" du routeur "Routeur1" en face du champ "Next Hop".</li>
-		  <li>Faites un clic gauche sur le bouton "Add".</li>
-		</ul>
-	      </p>
-	    </ol>
-
-	    <p>Pour que la réponse HTTP émise depuis le serveur puisse atteindre l'ordinateur portable, il faut que le routeur "Routeur1" retransmette les paquets, émis depuis le réseau local "LAN 2", à travers le réseau métropolitain via l'interface "8/0" du routeur "Routeur0". <b>Définissez</b> une route, sur le routeur "Routeur1", avec:</p>
-	    <ul>
-	      <li>L'adresse réseau de la destination: <span style="font-family:monospace;font-weight:bold;">192.168.1.0</span></li>
-	      <li>Le masque de sous-réseau de la destination: <span style="font-family:monospace;font-weight:bold;">255.255.255.0</span></li>
-	      <li>L'adresse IP que vous avez configuré sur l'interface "8/0" du routeur "Routeur0".</li>
-	    </ul>
-	  </div>
-	  <div class="colonne_droite">
-	    <div class="image_centree"><img  style="max-width: 30vw;border: 2px solid black;" src="images/routage_02_12.jpg" alt=""><br/><br/>
-	    </div>
-	  </div>
-	</div>
-
-	<h4>Tests de connectivité</h4>
-
-	<div class="double_5050">
-	  <div class="colonne_gauche">
-	    <p><b>Allez</b>, un petit moment après avoir terminé les configurations,  dans la <a href="reseauxinfo_1.html#interface_pt">fenêtre des tests de connectivité</a> et:</p>
-	    <ol>
-	      <li><b>Faites</b> un double clic gauche sur le bouton rouge correspondant au test.</li>
-	      <li><b>Vérifiez</b> que le test a réussi avec le message "Successful" qui doit s'afficher.</li>
-	    </ol>
-
-	    <p><b>Vérifiez</b> que vous réussissez à vous connecter, depuis l'ordinateur portable, sur le site web hébergé sur le serveur.</p>
-	  </div>
-	  <div class="colonne_droite">
-	    <div class="image_centree"><img  style="max-width: 30vw;border: 2px solid black;" src="images/routage_02_13.jpg" alt=""><br/><br/>
-	    </div>
-	  </div>
-	</div>
-	
-
-	<div class="double_1090">
-	  <div class="colonne_gauche">
-	    <img style="max-width: 50vw;" src="images/travail.jpg" alt=""> 
-	  </div>
-	  <div class="colonne_droite"><h3>Transfert du travail</h3></div>
-	</div>
-
-	<p><b>Enregistrez</b> votre travail, et <b>transférez-le</b> au professeur.</p>
-
-	
-
-	<h2>Réseau informatique d'une ville</h2>
-	
-	<div class="double_5050">
-	  <div class="colonne_gauche">
-	    <p>Les réseaux informatiques d'un hôpital, d'une salle de classe, et d'une bibliothèque; sont interconnectés par 3 routeurs pour constituer le réseau métropolitain, dans l'image ci-contre, d'une ville. Les hôtes dans leurs sous-réseaux respectifs sont:</p>
-	    <ul>
-	      <li>Sous-réseau 1: serveur 1, PC1, PC2, PC3.</li>
-	      <li>Sous-réseau 2: serveur 2, portable 1, portable 2, portable 3.</li>
-	      <li>Sous-réseau 3: serveur 3, portable 4, portable 5, portable 6.</li>
-	      <li>Sous-réseau 4: liaison entre le routeur 1 et le routeur 2.</li>
-	      <li>Sous-réseau 5: liaison entre le routeur 2 et le routeur 3.</li>
-	      <li>Sous-réseau 6: liaison entre le routeur 3 et le routeur 1.</li>
-	    </ul>
-	    
-	    <p>Le but l'exercice est de compléter le réseau informatique de la ville avec:</p>
-	    <ul>
-	      <li>L'installation des appareils d'infrastructure, et le positionnement du matériel dans la vue physique.</li>
-	      <li>L'interconnexion par câble, ou en sans-fil avec la configuration du SSID et de Authentication.</li>
-	      <li>La configuration des paramètres réseau des hôtes et appareils d'infrastructure:
-		<p>
-		  <ul>
-		    <li>Adresse IPv4,</li>
-		    <li>Masque de sous-réseau,</li>
-		    <li>Passerelle.</li>
-		  </ul>
-		</p>
-	      </li>
-	      <li>La configuration des tables de routage.</li>
-	      <li>L'exécution des tests de connectivité.</li>
-	    </ul>
-
-	    <p>Les adresses des sous-réseaux, en notation CIDR, sont:</p>
-	    <ul>
-	      <li>Sous-réseau 1: <span style="font-family:monospace;font-weight:bold;">192.168.0.0/24</span></li>
-	      <li>Sous-réseau 2: <span style="font-family:monospace;font-weight:bold;">192.168.1.0/24</span></li>
-	      <li>Sous-réseau 3: <span style="font-family:monospace;font-weight:bold;">192.168.2.0/24</span></li>
-	      <li>Sous-réseau 4: <span style="font-family:monospace;font-weight:bold;">200.12.0.0/24</span></li>
-	      <li>Sous-réseau 5: <span style="font-family:monospace;font-weight:bold;">200.12.1.0/24</span></li>
-	      <li>Sous-réseau 6: <span style="font-family:monospace;font-weight:bold;">200.12.2.0/24</span></li>
-	    </ul>
-	  </div>
-	  <div class="colonne_droite">
-	    <div class="image_centree"><img  style="max-width: 30vw;border: 2px solid black;" src="images/routage_01.jpg" alt=""><br/><br/>
-	    </div>
-	  </div>
-	</div>
-
-	<div class="double_1090">
-	  <div class="colonne_gauche">
-	    <img style="max-width: 50vw;" src="images/maj.jpg" alt="">
-	  </div>
-	  <div class="colonne_droite"><h3>Installation des documents de travail</h3></div>
-	</div>
-
-	<ul>
-	  <li><b>Téléchargez</b> le fichier <a href="https://drive.google.com/file/d/1FTGgMPRlTzJdBoMNQAgUnhYswLVIoesx/view?usp=sharing">ville.zip</a> et sauvegardez-le sur votre clé USB ou, à défaut, dans votre espace de personnel.</li>
-	  <li><b>Faites</b> un clic droit sur le fichier "ville.zip", et <b>sélectionnez</b> "extraire tout".</li>
-	  <li><b>Faites</b> un double clic gauche sur le dossier "ville" qui a été extrait, puis sur le fichier "ville.pka" à l'intérieur du dossier.</li>
-	</ul>
-
-	<div class="double_1090">
-	  <div class="colonne_gauche">
-	    <img style="max-width: 50vw;" src="images/finalisation.jpg" alt="">
-	  </div>
-	  <div class="colonne_droite"><h3>Finalisation du réseau de la ville</h3></div>
-	</div>
-
-	<div class="double_5050">
-	  <div class="colonne_gauche">
-	    <ul>
-	      <li><span style="color:rgb(255,0,0);">N'oubliez pas de sauvegarder régulièrement votre travail. Transférez-le, voir "transfert du travail" en fin de chapitre, à la fin de chaque séance.</span></li>
-	    </ul>
-	  </div>
-	  <div class="colonne_droite">
-	    <div class="image_centree"><img  style="max-width: 30vw;border: 2px solid black;" src="images/salle_de_classe_01_1.jpg" alt=""><br/><br/>
-	    </div>
-	  </div>
-	</div>
-
-	<h4>Interconnexion:</h4>
-
-	<div class="double_5050">
-	  <div class="colonne_gauche">
-	    <p>Si la longueur d'un câble de raccordement est trop longue, aucun signal ne pourra être transmis et les voyants de liaison apparaîtront en rouge.</p>
-	    <ul>
-	      <li><b>Allez</b> dans la vue physique, puis <b>placez</b> le curseur de la souris sur le câble qui relie les routeurs "Routeur 1" et "Routeur 2", et <b>constatez</b>, dans la nouvelle boite de dialogue, la longueur du câble.</li>
-	    </ul>
-	  </div>
-	  <div class="colonne_droite">
-	    <div class="image_centree"><img  style="max-width: 30vw;border: 2px solid black;" src="images/ville_01.jpg" alt=""><br/><br/>
-	    </div>
-	  </div>
-	</div>
-
-	<p>Le tableau suivant récapitule les longueurs maximales des différents câbles:</p>
-
-	<p>
-	  <table style="border: 1px solid black;margin-left:auto;margin-right:auto;text-align:center;width:80%;">
-	    <tr>
-	      <td style="background-color:black;color:white;border: 1px solid white;width:25%;">Dénomination</td><td style="background-color:black;color:white;border: 1px solid white;width:25%;">Débit maximum</td><td style="background-color:black;color:white;border: 1px solid white;width:25%;">Type de câble</td><td style="background-color:black;color:white;border: 1px solid white;width:25%;">Longueur maximale</td>
-	    </tr>
-	    <tr>
-	      <td>10Base-T</td><td>10Mbps</td><td>Cat 3/Cat 5 UTP (paires torsadées non blindées)</td><td>100m</td>
-	    </tr>
-	    <tr>
-	      <td style="background-color:DarkGray;">100Base-TX</td><td style="background-color:DarkGray;">100Mbps</td><td style="background-color:DarkGray;">Cat 5 UTP</td><td style="background-color:DarkGray;">100m</td>
-	    </tr>
-	    <tr>
-	      <td style="background-color:DarkGray;">100Base-TX</td><td style="background-color:DarkGray;">200Mbps</td><td style="background-color:DarkGray;">Cat 5 UTP</td><td style="background-color:DarkGray;">100m</td>
-	    </tr>
-	    <tr>
-	      <td style="background-color:DarkGray;">100Base-FX</td><td style="background-color:DarkGray;">100Mbps</td><td style="background-color:DarkGray;">fibre multimode</td><td style="background-color:DarkGray;">400m</td>
-	    </tr>
-	    <tr>
-	      <td style="background-color:DarkGray;">100Base-FX</td><td style="background-color:DarkGray;">200Mbps</td><td style="background-color:DarkGray;">fibre multimode</td><td style="background-color:DarkGray;">2Km</td>
-	    </tr>
-	    <tr>
-	      <td>1000Base-T</td><td>1Gbps</td><td>Cat 5e UTP</td><td>100m</td>
-	    </tr>
-	    <tr>
-	      <td>1000Base-TX</td><td>1Gbps</td><td>Cat 6 UTP</td><td>100m</td>
-	    </tr>
-	    <tr>
-	      <td>1000Base-SX</td><td>1Gbps</td><td>fibre multimode</td><td>550m</td>
-	    </tr>
-	    <tr>
-	      <td>1000Base-LX</td><td>1Gbps</td><td>fibre monomode</td><td>2Km</td>
-	    </tr>
-	    <tr>
-	      <td style="background-color:DarkGray;">10GBase-T</td><td style="background-color:DarkGray;">10Gbps</td><td style="background-color:DarkGray;">Cat 6a/Cat 7 UTP</td><td style="background-color:DarkGray;">100m</td>
-	    </tr>
-	    <tr>
-	      <td style="background-color:DarkGray;">10GBase-LX</td><td style="background-color:DarkGray;">10Gbps</td><td style="background-color:DarkGray;">fibre multimode</td><td style="background-color:DarkGray;">100m</td>
-	    </tr>
-	    <tr>
-	      <td style="background-color:DarkGray;">10GBase-T</td><td style="background-color:DarkGray;">10Gbps</td><td style="background-color:DarkGray;">fibre monomode</td><td style="background-color:DarkGray;">10Km</td>
-	    </tr>
-	  </table>
-	</p>
-
-	<div class="double_5050">
-	  <div class="colonne_gauche">
-	    <ul>
-	      <li><p><b>Installez</b> les appareils d'infrastructure en vous assurant de les placer correctement dans la vue physique, et <b>interconnectez</b> les réseaux locaux de l'hôpital, de la salle de classe, et de la bibliothèque par l'intermédiaire des 3 routeurs déjà installés. <b>Veuillez</b> tenir compte des remarques suivantes:</p>
-		<ul>
-		  <li>Il est impossible de changer la configuration matérielle des hôtes et appareils d'infrastructure déjà installés. Une boite de dialogue avec le message "Add/Change Interface is locked" apparait si vous essayez de le faire.</li>
-		  <li>Veillez à garder les dispositions, dans la vue physique, des hôtes dans leurs bâtiments respectifs (hôpital, lycée, et bibliothèque), ainsi que celles du local par défaut et des routeurs au niveau de la ville.</li>
+		  <li>L'adresse IPv4 dans la boite de dialogue en face du champ "IP Adress" (ex: 192.168.0.1).</li>
+		  <li>Le masque de sous-réseau dans la boite de dialogue en face du champ "Subnet Mask" (ex: 255.255.255.0).</li>
 		</ul>
 	      </li>
-	      <li><b>Vérifiez</b> que tous les hôtes sont interconnectés avec, tous les voyants de liaison des câbles en vert et les liaisons sans-fils activées. Le score, à la fin de cette étape, ne doit pas avoir changé, et doit être de 24/66.</li>
-	    </ul>
+	    </ol>
 	  </div>
 	  <div class="colonne_droite">
-	    <div class="image_centree"><img  style="max-width: 30vw;border: 2px solid black;" src="images/ville_02.jpg" alt=""><br/><br/>
+	    <div class="image_centree"><img  style="max-width: 30vw;border: 2px solid black;" src="images/hopital_06.jpg" alt=""><br/><br/>
 	    </div>
 	  </div>
 	</div>
 
-	<h4>Adressage:</h4>
+	<div class="double_5050">
+	  <div class="colonne_gauche">
+	    <p><b>Terminez</b> de configurer les paramètres de réseau, adresses IPv4 et masques de sous-réseau, pour tous les hôtes du réseau informatique de l'hôpital.</p>
+	    <p><b>Vérifiez</b> votre score qui doit être, à la fin de cette étape, de 58/58.</p>
+	  </div>
+	  <div class="colonne_droite">
+	    <div class="image_centree"><img  style="max-width: 30vw;border: 2px solid black;" src="images/hopital_07.jpg" alt=""><br/><br/>
+	    </div>
+	  </div>
+	</div>
 
 	<div class="double_5050">
 	  <div class="colonne_gauche">
-	    <ul>
-	      <li><b>Configurez</b> les paramètres réseau, adresse IP et masque de sous-réseau, des hôtes et appareils d'infrastructure présents dans tout le réseau.</li>
-	      <li><b>Vérifiez</b> votre score qui doit être, à la fin de cette étape, de 66/66.</li>
-	    </ul>
+	    <ol>
+	      <li><b>Faites</b> un clic gauche sur le "Point d'accès 1".</li>
+	      <li><b>Faites</b> un clic gauche sur l'onglet "Config".</li>
+	      <li><b>Sélectionnez</b> "Port 1" dans la zone de liste.</li>
+	    </ol>
 	  </div>
 	  <div class="colonne_droite">
-	    <div class="image_centree"><img  style="max-width: 30vw;border: 2px solid black;" src="images/ville_03.jpg" alt=""><br/><br/>
+	    <div class="image_centree"><img  style="max-width: 30vw;border: 2px solid black;" src="images/hopital_08.jpg" alt=""><br/><br/>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="double_5050">
+	  <div class="colonne_gauche">
+	    <p>Les paramètres du point d'accès, pour connecter des hôtes sur le réseau sans fil, à relever sont:</p>
+	    <ol>
+	      <li>Le <b>SSID</b> (<i>Service Set IDentifier</i>) qui sert à identifier le réseau sans fil.</li>
+	      <li>Le mode de certification: <b>WEP, WPA-PSK ou WPA2-PSK</b>,</li>
+	      <li>La valeur de <b>Key</b> en mode WEP, ou celle de <b>Pass Phrase</b> en mode WPA-PSK ou WPA2-PSK,</li>
+	      <li>Le type de cryptage dans <b>Encryption Type</b>.</li>
+	    </ol>
+	  </div>
+	  <div class="colonne_droite">
+	    <div class="image_centree"><img  style="max-width: 30vw;border: 2px solid black;" src="images/hopital_09.jpg" alt=""><br/><br/>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="double_5050">
+	  <div class="colonne_gauche">
+	    <ol>
+	      <li><b>Faites</b> un clic gauche sur un PC à connecter au réseau sans fil.</li>
+	      <li><b>Faites</b> un clic gauche sur l'onglet "Config".</li>
+	      <li><b>Sélectionnez</b> "Wireless0" dans la zone de liste.</li>
+	    </ol>
+	  </div>
+	  <div class="colonne_droite">
+	    <div class="image_centree"><img  style="max-width: 30vw;border: 2px solid black;" src="images/hopital_10.jpg" alt=""><br/><br/>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="double_5050">
+	  <div class="colonne_gauche">
+	    <p><b>Reportez</b> les paramètres du réseau sans fil, pour se connecter sur le "Point d'accès 1", sur le PC:</p>
+	    <ol>
+	      <li>Le <b>SSID</b>,</li>
+	      <li>Le mode de certification,</li>
+	      <li>La valeur de <b>Key</b>, ou celle de <b>Pass Phrase</b>,</li>
+	      <li>Le type de cryptage.</li>
+	    </ol>
+	  </div>
+	  <div class="colonne_droite">
+	    <div class="image_centree"><img  style="max-width: 30vw;border: 2px solid black;" src="images/hopital_11.jpg" alt=""><br/><br/>
 	    </div>
 	  </div>
 	</div>
 
 
-	<h4>Routage et tests de connectivité:</h4>
-
 	<div class="double_5050">
 	  <div class="colonne_gauche">
-	    <ul>
-	      <li><b>Configurez</b> le paramètre "Default Gateway" sur chacun des hôtes du réseau.</li>
-	      <li><b>Configurez</b> les tables de routage des trois routeurs "Routeur 1", "Routeur 2", et "Routeur 3"; sachant que chaque routeur doit transmettre les paquets dans deux sous-réseaux différents. Le routeur "Routeur 1", par exemple, doit transmettre les paquets, depuis le sous-réseau de l'hôpital, vers les sous-réseaux de la salle de classe et de la bibliothèque.</li>
-	      <li><p><b>Effectuez</b> les tests de connectivité:</p>
-		<ol>
-		  <li><b>Faites</b> un clic gauche sur le bouton "Toggle PDU List Window" pour ouvrir/fermer la fenêtre des tests de connectivité.</li>
-		  <li><b>Faites</b> un double clic gauche sur bouton rouge correspondant au test.</li>
-		  <li><b>Vérifiez</b> que le test a réussi avec le message "Successful" qui doit s'afficher.</li>
-		</ol>
-	      </li>
-	      <li><b>Faites</b> des tests pour vérifier que l'on puisse accéder aux différents sites web hébergés sur les serveurs.</li>
-	    </ul>
+	    <p>Quelques instants après avoir configurés les paramètres du réseau sans fil et s'ils sont corrects, une ligne hachurée, voir ci-contre, apparaît entre le point d'accès et le PC.</p>
+
+	    <p><b>Terminez</b> de configurer les paramètres du réseau sans fil sur les PCs qui le nécessitent.</p>
 	  </div>
 	  <div class="colonne_droite">
-	    <div class="image_centree"><img  style="max-width: 30vw;border: 2px solid black;" src="images/ville_04.jpg" alt=""><br/><br/>
+	    <div class="image_centree"><img  style="max-width: 30vw;border: 2px solid black;" src="images/hopital_12.jpg" alt=""><br/><br/>
 	    </div>
 	  </div>
 	</div>
 
 	<div class="double_1090">
 	  <div class="colonne_gauche">
-	    <img style="max-width: 50vw;" src="images/travail.jpg" alt="">
+	    <img style="max-width: 50vw;" src="images/travail.jpg" alt=""> <!-- 262 250 -->
 	  </div>
-	  <div class="colonne_droite"><h3>Transfert du travail</h3></div>
+	  <div class="colonne_droite"><a id="transfert_hopital"></a><h3>Transfert du travail</h3></div>
 	</div>
 
-	<p><b>Enregistrez</b> votre travail, et <b>transférez-le</b> au professeur.</p>
+	<p>&clubs; <b>Enregistrez</b> votre travail, et <b>transférez</b> au professeur.</p>
 	
 
 	<!--         Bouttons de navigation                -->
@@ -503,6 +297,9 @@
 		</form>
 	      </td>
 	      <td style="text-align: right;">
+		<form action="reseauxinfo_4.html" method="get">
+		  <input type="submit" value="Suite" />
+		</form>
 	      </td>
 	    </tr>
 	  </table>
